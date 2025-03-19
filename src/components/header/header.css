@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+.Logo {
+    height: 50px;
+    z-index: 1
+}
+
+.marca{
+    font-family: "Baumans", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 10px;
+    margin-left: 5px;
+    z-index: 1
+}
+.NavBar{
+    z-index: 1;
+}
+.contenedorLogoMarca{
+display: flex;
+justify-content: center;
+}
+
+.contenedorCircular {
+    width: 100%;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    background: #3c3b3b;
+    background: rgb(60, 59, 59);
+    background: linear-gradient(349deg, rgba(60, 59, 59, 1) 48%, rgba(255, 255, 255, 1) 100%);
+    border-bottom-left-radius: 150% 250%;
+    border-bottom-right-radius: 150% 250%;
+    position: relative; /* Para posicionar los círculos */
+    overflow: hidden; /* Para que los círculos no se salgan del contenedor */
+}
+
+.titulo {
+    color: #d9d9d9;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    z-index: 1;
+}
+
+.color {
+    color: #ff6b00;
+}
+
+.contenedorSuperior {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.contenedorInferior {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para los círculos */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite; /* Animación de rotación */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Diseño UX/UI",
+        "description": "🎨 <strong>Diseño centrado en el usuario</strong>. Creamos experiencias intuitivas, atractivas y funcionales. Desde la investigación hasta el prototipo, aseguramos que cada interfaz sea clara y eficiente. Optimiza la experiencia de tus usuarios con un diseño pensado para ellos.",
+        "icono": "../assets/iconoUx.png",
+        "backgroundColor": "#FF6B00"
+    },
+    {
+        "title": "Maquetado y desarrollo de software",
+        "description": "💻 <strong>De la idea al producto</strong>. Convertimos diseños en productos digitales funcionales, optimizados y accesibles. Desarrollo responsive, adaptable y de alto rendimiento. Transformamos conceptos en experiencias digitales reales.",
+        "icono": "../assets/iconoSoftware.png",
+        "backgroundColor": "#2D2D2D"
+    },
+    {
+        "title": "Optimización y rediseño web",
+        "description": "🚀 <strong>Potenciamos tu sitio</strong>. Si tu web necesita mejorar su velocidad, accesibilidad o diseño, analizamos y optimizamos cada detalle para asegurar su mejor rendimiento. Renueva tu presencia digital y alcanza mejores resultados.",
+        "icono": "../assets/iconoWeb.png",
+        "backgroundColor": "#DC0108"
+    }
+]
+

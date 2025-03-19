@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+
+.card {
+    background-color: #F4E3D7; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 200px; 
+    height: 280px;
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    font-family: Arial, sans-serif; 
+    margin: 20px;
+    }
+
+
+.card:hover {
+    transform: translateY(-20px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.card-icon {
+    width:100px; 
+    height: 100px;
+    margin-bottom: 5px; 
+}
+
+
+.card-title {
+    color: #d9d9d9;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem; 
+    color: #333333; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+.card-text {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 9px; 
+    line-height: 1.6; 
+    text-align: center; 
+}
