@@ -1,0 +1,15 @@
+/* Estilos para los círculos */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite; /* Animación de rotación */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

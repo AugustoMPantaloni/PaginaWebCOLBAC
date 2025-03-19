@@ -19,7 +19,7 @@ const Header = () => {
     { id: 9, size: 65, color: "#dc0108", speedX: 1.5, speedY: 1 },   // Más grande y más lento
     { id: 10, size: 180, color: "#dc0108", speedX: 1, speedY: 1 },   // Más grande y más lento
     { id: 11, size: 220, color: "#dc0108", speedX: 1, speedY: 0.5 }, // Más grande y más lento
-    { id: 12, size: 220, color: "#dc0108", speedX: 0.5, speedY: 1.5 },// Más grande y más lento
+    { id: 12, size: 130, color: "#dc0108", speedX: 2, speedY: 0.1 }, // Más grande y más lento
     ];
 
   // Lógica de animación
@@ -65,6 +65,7 @@ const Header = () => {
 
     return (
     <>
+    <div className="fondoHeader">
         <div className="contenedorCircular" ref={containerRef}>
             <div className="contenedorSuperior">
                 <div className="contenedorLogoMarca">
@@ -75,8 +76,8 @@ const Header = () => {
             </div>
             <div className="contenedorInferior">
                 <h1 className="titulo">
-                NAVEGAMOS <br/> EL PRESENTE,
-                <br/> <span className="color">DISEÑAMOS EL <br/> MAÑANA.</span>
+                    NAVEGAMOS <br/> EL PRESENTE,
+                    <br/> <span className="color">DESARROLLAMOS EL <br/> MAÑANA.</span>
                 </h1>
             </div>
             {/* Círculos animados */}
@@ -94,6 +95,7 @@ const Header = () => {
                 ></div>
             ))}
         </div>
+    </div>
     </>
     );
 };
