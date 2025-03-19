@@ -97,7 +97,7 @@ const Body = () => {
                 <div className="contenedorComun4">
                     <div className="contenedorRN2">
                         <div className="rectanguloNegro2"> 
-                            <p className="estilosTexto4"> QUEREMOS CONOCERTE,<br/> <span>SUMATE</span> A NUESTRO <span>EQUIPO</span> Y <br/> <span>CONSTRUYAMOS JUNTOS</span> EL <br/> FUTURO DIGITAL.</p>
+                            <p className="estilosTexto4"> QUEREMOS CONOCERTE,<br/> <span className="colorSumate">SUMATE</span> A NUESTRO <span className="colorEquipo">EQUIPO</span> Y <br/> <span className="colorConstruyamos">CONSTRUYAMOS JUNTOS</span> EL <br/> FUTURO DIGITAL.</p>
                         </div>
                     </div>
                     <div className="contenedorCN2">    

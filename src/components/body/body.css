@@ -415,6 +415,18 @@
     font-size: 22px; 
 }
 
+.colorSumate{
+    color: #01DCB7;
+}
+
+.colorEquipo{
+    color: #DC0108;
+}
+
+.colorConstruyamos{
+    color: #FF6B00;
+}
+
 .rectanguloRojo{
     left: 488.5px;
     bottom: 350px;
