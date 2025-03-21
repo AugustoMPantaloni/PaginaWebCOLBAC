@@ -13,7 +13,7 @@ const Cards = ({title, description, icono, backgroundColor, borderColor, shadowC
                         MozBoxShadow: `0px 2px 4px 1px ${shadowColor}`
                     }}
                 >
-                    <h5 className="card-title">{title}</h5>
+                    <h5 className="card-title" dangerouslySetInnerHTML={{ __html: title }}/>
                 </div>
                 <p  className="card-text" dangerouslySetInnerHTML={{ __html: description }} />
             </div>

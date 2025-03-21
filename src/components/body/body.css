@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 .card-list{
     display: flex;
@@ -366,6 +365,7 @@
 
 .contenedorComun4 {
     position: relative;
+    max-height: 250px;
 }
 
 .contenedorRN2{

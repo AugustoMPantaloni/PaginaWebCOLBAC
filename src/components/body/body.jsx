@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cards from "../cards/cards";
-import CardsData from "../../data/servicios.json"; //Problemas con la importacion de los iconos
+import CardsData from "../../data/servicios"; //Problemas con la importacion de los iconos
 import "./body.css"
 import { Link } from "react-router-dom";
 
@@ -116,13 +116,11 @@ const Body = () => {
                             <div className="circulo-punteado2"></div>  
                         </div>
                     </div>
-                    <div className="contenedorRR1">
                         <div className="rectanguloRojo">
                             <div className="estilosTrabaja">
                                 <Link className="estilosTextoTrabaja">¡TE ESTAMOS ESPERANDO!</Link>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </>
