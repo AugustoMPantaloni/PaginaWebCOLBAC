@@ -1,9 +1,13 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import logo1 from "../../assets/logo1.png";
+import MenuNav from "../../assets/menuNav.png"
 import NavBar from "../navbar/navbar";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+    const [menu, setMenu] = useState(false)
+    const mostrarMenu = () => setMenu (NavBar)
     const containerRef = useRef(null);
 
   // Configuración de los círculos
@@ -72,7 +76,9 @@ const Header = () => {
                     <img className="Logo" src={logo1} alt="Logo" />
                     <p className="marca">&lt;colbac&gt; </p>
                 </div>
-                <NavBar className="NavBar"></NavBar>
+                <Link to="/navBar">
+                <button className="estilosBotonNav" > <img src={MenuNav} alt="Menu"/>  </button>
+                </Link>
             </div>
             <div className="contenedorInferior">
                 <h1 className="titulo">

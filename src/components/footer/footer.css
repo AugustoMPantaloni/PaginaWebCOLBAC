@@ -1,63 +1,118 @@
-.footer{
+.footer {
     width: 100%;
     height: 180px;
-    background-color:#2D2D2D ;
+    background-color: #2D2D2D;
     display: grid;
     grid-template-columns: 20% 60% 10% 10%;
-    grid-template-areas:
-        "logo espacio iconos enlaces";
+    grid-template-areas: "logo espacio iconos enlaces";
+    align-items: center;
+    padding: 0 20px;
 }
 
-.contenedorLogo{
+.contenedorLogo {
     grid-area: logo;
-    justify-self: center;
+    transition: transform 0.3s ease; /
 }
 
-.logoFooter img {
+.contenedorLogo:hover {
+    transform: scale(1.05); 
+}
+
+.contenedorLogo img {
     height: 100px;
     z-index: 1;
+    transition: filter 0.3s ease; 
 }
 
-.contenedorLogoRedes{
+
+.contenedorLogo img:hover {
+    filter: brightness(1.1); 
+}
+
+.contenedorLogoRedes {
     grid-area: iconos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
 }
 
-.logoInstagram img{
+.logoInstagram img {
+    padding-left: 1px;
     height: 40px;
+    transition: all 0.3s ease;
+}
+
+.logoInstagram img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px #E1306C); /* Sombra rosada característica de Instagram */
 }
 
 .logoContacto img {
     height: 35px;
-
+    transition: all 0.3s ease;
 }
 
-.contenedorEnlaces{
+.logoContacto img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2) drop-shadow(0 0 3px #4285F4); 
+}
+
+.contenedorEnlaces {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    grid-area: iconos;
     grid-area: enlaces;
+    gap: 10px; 
 }
 
-.enlaces{
+.enlaces {
     color: #FFFFFF;
     text-decoration: none;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 12px; 
+    font-size: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 2px; /
 }
 
-.contenedorTexto{
+.enlaces:hover {
+    color: #F5F5F5; 
+    transform: translateX(5px); 
+}
+
+.enlaces::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease;
+}
+
+.enlaces:hover::after {
+    width: 100%; 
+}
+
+.contenedorTexto {
     grid-area: espacio;
-    align-self: end;
+    text-align: center;
 }
 
-.contenedorTexto p{
+.contenedorTexto p {
     color: #FFFFFF;
-    text-align: center ;
+    text-align: center;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 9px; 
+    font-size: 9px;
+    transition: all 0.3s ease;
+}
+
+.contenedorTexto:hover p {
+    letter-spacing: 0.5px; 
 }

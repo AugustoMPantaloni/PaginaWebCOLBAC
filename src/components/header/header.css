@@ -18,9 +18,6 @@
     z-index: 1
 }
 
-.NavBar{
-    z-index: 1;
-}
 
 .contenedorLogoMarca{
 display: flex;
@@ -37,8 +34,8 @@ justify-content: center;
     background: linear-gradient(349deg, rgba(60, 59, 59, 1) 48%, rgba(255, 255, 255, 1) 100%);
     border-bottom-left-radius: 260% 200%;
     border-bottom-right-radius: 260% 200%;
-    position: relative; /* Para posicionar los círculos */
-    overflow: hidden; /* Para que los círculos no se salgan del contenedor */
+    position: relative; 
+    overflow: hidden; 
 }
 
 .titulo {
@@ -67,6 +64,12 @@ justify-content: center;
     justify-content: center;
 }
 
+.estilosBotonNav{
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    z-index: 3;
+}
 /* Estilos para los círculos */
 .circle {
     position: absolute;

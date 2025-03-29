@@ -1,0 +1,447 @@
+.estilosBody3{
+    background-color:#D9D9D9;
+    padding-top: 40px;
+    width: 100%;
+    z-index: -2;
+    
+}
+
+.contenedorComun3 {
+    position: relative;
+    background-color: #D9D9D9;
+}
+
+.contenedorRN1{
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.rectanguloNegro1{
+    position: absolute;
+    background-color: #2D2D2D;
+    width: 750px;
+    height: 200px;
+    border-radius: 20px 0 0 20px;
+    z-index: 1;
+}
+
+.contenedorCN1{
+    position: relative;
+    right: 60px;
+    bottom: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.cuadradoNegro1{
+    background: rgb(101,101,101);
+    background: linear-gradient(309deg, rgba(101,101,101,1) 0%, rgba(45,45,45,1) 75%);
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.estilosTexto3{
+    text-align: center;
+    margin-top: 35px;
+    margin-right:300px;
+    color:#F4E3D7 ;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px; 
+}
+
+.colorEstetica{
+    color: #DC0108;
+}
+
+.colorFuncionalidad{
+    color: #FF6B00;
+}
+
+.colorExperiencia{
+    color: #01DCB7;
+}
+
+.circulo-punteado {
+    position: absolute;
+    border: 2px dotted #fff; 
+    border-radius: 50%; 
+    opacity: 0.7; 
+}
+
+
+.circulo-punteado:nth-child(1) {
+    width: 180px;  
+    height: 180px;
+    top: 10%;      
+    left: 10%;
+}
+
+.circulo-punteado:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 85%;      
+    right: 5%;
+}
+
+.circulo-punteado:nth-child(5) {
+    width: 200px;  
+    height: 200px;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%); 
+}
+
+.circulo-punteado:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    bottom: 20%;
+    left: 70%;     
+}
+
+.circulo-punteado:nth-child(7) {
+    width: 120px;
+    height: 120px;
+    top: 20%;
+    left: 80%;    
+}
+
+.circulo-punteado:nth-child(4) {
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 85%;     
+}
+
+.circulo-punteado:nth-child(6) {
+    width: 60px;
+    height: 60px;
+    top: 90%;      
+    left: 20%;
+}
+
+.circulo-punteado:nth-child(8) {
+    width: 120px;  
+    height: 120px;
+    top: 10%;      
+    left: 20%;
+}
+
+.circulo-punteado:nth-child(9) {
+    width: 60px;
+    height: 60px;
+    top: 55%;      
+    right: 5%;
+}
+
+.circulo-punteado:nth-child(10) {
+    width: 100px;  /* Tamaño aumentado */
+    height: 100px;
+    bottom: 30%;
+    right: 50%;
+    transform: translate(50%, 50%); /* Centrado absoluto */
+}
+
+.circulo-punteado:nth-child(11) {
+    width: 70px;  /* Tamaño aumentado */
+    height: 70px;
+    bottom: 10%;
+    right: 90%;
+}
+
+.circulo-punteado:nth-child(12) {
+    width: 180px;  /* Tamaño aumentado */
+    height: 180px;
+    bottom: 90%;
+    right: 10%;
+}
+
+.rectanguloOrang{
+    bottom: 170px;
+    position: relative;
+    z-index: 0;
+    border-bottom-right-radius: 20px;
+    width: 600px;
+    height: 170px;
+    background-color: #FF6B00;
+}
+
+.estilosContactanos{
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    left: 60px;
+    position: relative;
+    width: 250px;
+    height: 45px;
+    background-color: #2D2D2D;
+}
+
+.estilosTextoContactanos{
+    color:#F4E3D7 ;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none
+}
+
+.contenedorComun4 {
+    position: relative;
+    max-height: 250px;
+}
+
+.contenedorRN2{
+    display: flex;
+    justify-content: start;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.rectanguloNegro2{
+    position: absolute;
+    background-color: #2D2D2D;
+    width: 750px;
+    height: 200px;
+    border-radius: 0 20px 20px 0;
+    z-index: 1;
+}
+
+.contenedorCN2{
+    position: relative;
+    margin-left: 60px;
+    bottom: 40px;
+    display: flex;
+    z-index: 1;
+}
+
+.cuadradoNegro2{
+    background: rgb(101,101,101);
+    background: linear-gradient(51deg, rgba(101,101,101,1) 0%, rgba(45,45,45,1) 75%);
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.estilosTexto4{
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 300px;
+    color:#F4E3D7 ;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px; 
+}
+
+.colorSumate{
+    color: #01DCB7;
+}
+
+.colorEquipo{
+    color: #DC0108;
+}
+
+.colorConstruyamos{
+    color: #FF6B00;
+}
+
+.rectanguloRojo{
+    left: 488.5px;
+    bottom: 350px;
+    position: relative;
+    z-index: -1;
+    border-top-left-radius: 20px;
+    width: 600px;
+    height: 170px;
+    background-color: #DC0108;
+    z-index: 0;
+}
+
+.estilosTrabaja{
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top: 25px;
+    left: 300px;
+    position: relative;
+    width: 200px;
+    height: 45px;
+    background-color: #2D2D2D;
+}
+
+.estilosTextoTrabaja{
+    color:#F4E3D7 ;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none
+}
+
+
+.circulo-punteado2 {
+    position: absolute;
+    border: 2px dotted #FF6B00; /* Borde naranja punteado */
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.circulo-punteado2:nth-child(1) {
+    width: 160px;
+    height: 160px;
+    top: 5%;
+    left: 15%;
+}
+
+.circulo-punteado2:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: 80%;
+    right: 10%;
+}
+
+.circulo-punteado2:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    bottom: 15%;
+    left: 60%;
+}
+
+.circulo-punteado2:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    top: 70%;
+    left: 70%;
+}
+
+.circulo-punteado2:nth-child(5) {
+    width: 190px;
+    height: 190px;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.circulo-punteado2:nth-child(6) {
+    width: 70px;
+    height: 70px;
+    top: 90%;
+    left: 25%;
+}
+
+.circulo-punteado2:nth-child(7) {
+    width: 90px;
+    height: 90px;
+    top: 25%;
+    left: 85%;
+}
+
+.circulo-punteado2:nth-child(8) {
+    width: 140px;
+    height: 140px;
+    top: 15%;
+    left: 5%;
+}
+
+.circulo-punteado2:nth-child(9) {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    right: 15%;
+}
+
+.circulo-punteado2:nth-child(10) {
+    width: 110px;
+    height: 110px;
+    bottom: 25%;
+    right: 45%;
+    transform: translate(50%, 50%);
+}
+
+.circulo-punteado2:nth-child(11) {
+    width: 90px;
+    height: 90px;
+    bottom: 15%;
+    right: 75%;
+    transform: translate(50%, 50%);
+}
+
+.circulo-punteado2:nth-child(12) {
+    width: 30px;
+    height: 30px;
+    bottom: 85%;
+    right: 90%;
+    transform: translate(50%, 50%);
+}
+
+.estilosBody3 {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.contenedorComun3, .contenedorComun4 {
+    transition: transform 0.4s ease-in-out;
+}
+
+.rectanguloNegro1, .rectanguloNegro2 {
+    transition: background-color 0.5s ease-in-out;
+}
+.rectanguloNegro1:hover, .rectanguloNegro2:hover {
+    background-color: #1f1f1f;
+}
+
+.cuadradoNegro1, .cuadradoNegro2 {
+    transition: transform 0.4s ease-in-out;
+}
+.cuadradoNegro1:hover, .cuadradoNegro2:hover {
+    transform: scale(1.05);
+}
+
+.estilosTexto3, .estilosTexto4 {
+    transition: color 0.3s ease-in-out;
+}
+.estilosTexto3:hover, .estilosTexto4:hover {
+    color: #ffffff;
+}
+
+.estilosContactanos, .estilosTrabaja {
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.estilosContactanos:hover, .estilosTrabaja:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+.estilosTextoContactanos, .estilosTextoTrabaja {
+    transition: text-decoration 0.3s ease-in-out;
+}
+.estilosTextoContactanos:hover, .estilosTextoTrabaja:hover {
+    text-decoration: underline;
+}
+
+.rectanguloOrang, .rectanguloRojo {
+    transition: background-color 0.5s ease-in-out;
+}
+.rectanguloOrang:hover {
+    background-color: #ff4d00;
+}
+.rectanguloRojo:hover {
+    background-color: #b30005;
+}

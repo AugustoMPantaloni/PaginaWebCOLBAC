@@ -1,0 +1,47 @@
+.card-list{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.estilosBody2{
+    
+    background-color: #242424;
+}
+
+.contenedorComun2 {
+    position: relative;
+}
+
+.contenedorRecuadroRojo2{
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+}
+
+.recuadroRojo2{
+    position: absolute;
+    top:20px;
+    right: 15px;
+    background-color: #DC010833;
+    width: 450px;
+    height: 39px;
+    z-index: 1;
+}
+
+.contenedorTexto2{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+.estilosTexto2{
+    color: #F4E3D7;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px; 
+}
