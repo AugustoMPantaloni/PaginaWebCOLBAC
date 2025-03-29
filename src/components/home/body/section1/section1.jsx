@@ -1,5 +1,5 @@
 import "./section1.css"
-import abstrac from "../../../assets/Abstract.png"
+import abstrac from "../../../../assets/Abstract.png"
 
 const Section1 = () =>{
     return(

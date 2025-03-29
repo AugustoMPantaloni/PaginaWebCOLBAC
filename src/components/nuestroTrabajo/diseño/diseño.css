@@ -1,0 +1,42 @@
+.contenedorDiseño{
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+
+.contendorIconoDiseño{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconoDiseño{
+    width: 130px;
+    margin-right: 80px;
+}
+
+.contenedorTextoDiseño{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+.contenedorTextoDiseño h2{
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-left: 80px;
+}
+.contenedorTextoDiseño p{
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0%;
+    margin-left: 80px;
+}

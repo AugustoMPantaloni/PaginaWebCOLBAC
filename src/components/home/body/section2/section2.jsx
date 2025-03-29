@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+//Componentes
 import Cards from "../../cards/cards";
-import CardsData from "../../../data/servicios"; 
+import CardsData from "../../../../data/servicios"; 
+//Css
 import "./section2.css"
 
 

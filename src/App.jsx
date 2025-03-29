@@ -1,8 +1,10 @@
-import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 //Importacion de componentes
 import NavBar from './components/navbar/navbar';
-import Home from './components/Home';
+import Home from './components/home/Home';
+import NuestroTrabajo from './components/nuestroTrabajo/nuestroTrabajo';
+//Css
+import './App.css';
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path="/navBar" element={<NavBar />} />
+      <Route path="/NuestroTrabajo" element={<NuestroTrabajo/>}/>
     </Routes>
     </BrowserRouter>
   )

@@ -3,27 +3,6 @@
     background-color:#D9D9D9 ;
 }
 
-.Logo {
-    height: 50px;
-    z-index: 1
-}
-
-.marca{
-    font-family: "Baumans", system-ui;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: normal;
-    margin-top: 10px;
-    margin-left: 5px;
-    z-index: 1
-}
-
-
-.contenedorLogoMarca{
-display: flex;
-justify-content: center;
-}
-
 .contenedorCircular {
     width: 100%;
     height: 545px;
@@ -50,26 +29,12 @@ justify-content: center;
     color: #ff6b00;
 }
 
-.contenedorSuperior {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 10px;
-}
-
 .contenedorInferior {
     display: flex;
     justify-content: center;
+    margin-top: 150px;
 }
 
-.estilosBotonNav{
-    background-color: transparent; 
-    border: none; 
-    cursor: pointer;
-    z-index: 3;
-}
 /* Estilos para los círculos */
 .circle {
     position: absolute;

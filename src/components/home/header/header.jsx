@@ -1,13 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
-import logo1 from "../../assets/logo1.png";
-import MenuNav from "../../assets/menuNav.png"
-import NavBar from "../navbar/navbar";
-import "./header.css";
 import { Link } from "react-router-dom";
+//Componentes
+import HeaderGlobal from "../../headerGlobal/headerGlobal";
+//Css
+import "./header.css";
 
 const Header = () => {
-    const [menu, setMenu] = useState(false)
-    const mostrarMenu = () => setMenu (NavBar)
     const containerRef = useRef(null);
 
   // Configuración de los círculos
@@ -68,18 +66,9 @@ const Header = () => {
     }, []);
 
     return (
-    <>
     <div className="fondoHeader">
         <div className="contenedorCircular" ref={containerRef}>
-            <div className="contenedorSuperior">
-                <div className="contenedorLogoMarca">
-                    <img className="Logo" src={logo1} alt="Logo" />
-                    <p className="marca">&lt;colbac&gt; </p>
-                </div>
-                <Link to="/navBar">
-                <button className="estilosBotonNav" > <img src={MenuNav} alt="Menu"/>  </button>
-                </Link>
-            </div>
+            <HeaderGlobal/>
             <div className="contenedorInferior">
                 <h1 className="titulo">
                     NAVEGAMOS <br/> EL PRESENTE,
@@ -102,7 +91,6 @@ const Header = () => {
             ))}
         </div>
     </div>
-    </>
     );
 };
 

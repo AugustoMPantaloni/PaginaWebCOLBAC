@@ -1,26 +1,29 @@
 import { Link } from "react-router-dom"
-import "./navBar.css"
+//Componentes
 import logo1 from "../../assets/logo1.png";
 import imgContactanos from "../../assets/menuNav/imgContactanos.jpg";
 import imgNuestroTrabajo from "../../assets/menuNav/imgNuestroTrabajo.jpg";
 import imgPortfolio from "../../assets/menuNav/imgPortfolio.jpg";
 import imgServicios from "../../assets/menuNav/imgServicios.jpg";
 import imgSobreNosotros from "../../assets/menuNav/imgSobreNosotros.jpg"
-
+import cruz from "../../assets/cruz.png"
+//Css
+import "./navBar.css"
 
 const NavBar = () => {
     return(
         <div className="contenedorMenuNav">
-            <div className="contenedorLogoMarcaNav">
-                <img className="logoNav" src={logo1} alt="logo1"/>
-                <p className="marcaNav">&lt;colbac&gt;</p>
+            <div className="contenedorLogoMarcaCrux">
+                <div className="contenedorLogoMarcaNav">
+                    <img className="logoNav" src={logo1} alt="logo1"/>
+                    <p className="marcaNav">&lt;colbac&gt;</p>
+                </div>
+                <button className="buttonCruz"> <img className="cruzNavBar" src={cruz}/> </button>
             </div>
             <nav className="navNavBar">
                 <div className="posicionIzquierda">
                     <div className="contenedorSobreNosotros" style={{backgroundImage:`url(${imgSobreNosotros})`}}>
-                        <div className="noFiltro">
-                            <Link className="sobreNosotros"> Sobre Nosotros </Link>
-                        </div>
+                        <Link className="sobreNosotros"> Sobre Nosotros </Link>
                     </div>
                     <div className="contenedorServicios" style={{backgroundImage:`url(${imgServicios})`}}>
                         <Link className="servicios"> Servicios </Link>
@@ -28,7 +31,7 @@ const NavBar = () => {
                 </div>
                 <div className="posicionCentro">
                     <div className="contenedorNuestroTrabajo" style={{backgroundImage:`url(${imgNuestroTrabajo})`}}>
-                        <Link className="nuestroTrabajo"> Nuestro Trabajo </Link>
+                        <Link to="/NuestroTrabajo" className="nuestroTrabajo"> Nuestro Trabajo </Link>
                     </div>
                 </div>
                 <div className="posicionDerecha">
