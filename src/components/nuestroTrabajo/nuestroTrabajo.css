@@ -1,0 +1,32 @@
+
+
+.ourWorkContainer {
+    height: 100%;
+    display: flex;
+    margin-top: 2rem;
+    background-color: #f0f0f0;
+    background-size: 150px 310px;
+    background-image: linear-gradient(0deg, transparent 50%, #f4e3d7 50%);
+}
+
+.ourWorkFirstListContainer {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.ourWorkFirstListContainer .contenedorOurJob {
+    justify-content: flex-end;
+}
+
+.ourWorkListImgContainer {
+    height: 100%;
+    padding: 3rem 0;
+}
+
+.ourWorkSecondListContainer {
+    flex: 1;
+}
