@@ -1,6 +1,7 @@
 .card-list{
     display: flex;
     flex-wrap: nowrap;
+    justify-self: center;
 }
 
 .estilosBody2{
@@ -45,3 +46,4 @@
     font-style: normal;
     font-size: 17px; 
 }
+

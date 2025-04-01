@@ -13,7 +13,9 @@ const HeaderGlobal = ()=>{
     return(
             <div className="contenedorSuperior">
                 <div className="contenedorLogoMarca">
-                    <img className="Logo" src={logo1} alt="Logo" />
+                    <Link to="/">
+                        <img className="Logo" src={logo1} alt="Logo" />
+                    </Link>
                     <p className="marca">&lt;colbac&gt; </p>
                 </div>
                 <Link to="/navBar">

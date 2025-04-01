@@ -13,26 +13,8 @@
 
 .contenedorLogoMarcaCrux{
     display: flex;
-    justify-content: space-between;
-}
-
-.contenedorLogoMarcaNav{
-    display: flex;
-    padding-left: 10px;
-}
-
-.logoNav{
-    height: 65px;
-}
-
-.marcaNav{
-    padding-top: 6px;
-    font-family: "Baumans", system-ui;
-    font-weight: 400;
-    font-size: 25px;
-    font-style: normal;
-    margin-top: 10px;
-    margin-left: 5px;
+    justify-content: end;
+    padding-top: 20px;
 }
 
 .cruzNavBar{

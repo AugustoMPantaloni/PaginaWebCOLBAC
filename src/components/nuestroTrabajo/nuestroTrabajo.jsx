@@ -1,6 +1,7 @@
 //Componentes
 import Header from "./header/header"
 import ColumnOurJob from "./columnOurJob/columnOurJob.wrapper"
+import Footer from "../footer/footer"
 
 //Css
 import "./nuestroTrabajo.css"
@@ -57,6 +58,7 @@ const NuestroTrabajo = () =>{
                     }
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

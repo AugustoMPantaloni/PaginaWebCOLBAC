@@ -32,8 +32,9 @@ export const firstList = [
 
     {
         tittle: 'Mantenimiento y actualizaciones',
-        content: `Nada se lanza sin asegurarnos de que funcione a la perfección. 
-        Probamos cada rincón del sistema, corregimos errores y optimizamos el rendimiento, la seguridad y la usabilidad. 
-        Queremos que la experiencia final sea impecable.`
+        content: `Mantenimiento y actualizaciones
+        El lanzamiento no es el final, sino el comienzo. 
+        Seguimos monitoreando el software, aplicamos mejoras y agregamos nuevas funciones según las necesidades.
+        Así, tu producto sigue evolucionando con el tiempo.`
     },
 ];

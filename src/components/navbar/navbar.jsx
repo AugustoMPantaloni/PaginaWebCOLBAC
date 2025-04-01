@@ -14,16 +14,12 @@ const NavBar = () => {
     return(
         <div className="contenedorMenuNav">
             <div className="contenedorLogoMarcaCrux">
-                <div className="contenedorLogoMarcaNav">
-                    <img className="logoNav" src={logo1} alt="logo1"/>
-                    <p className="marcaNav">&lt;colbac&gt;</p>
-                </div>
                 <button className="buttonCruz"> <img className="cruzNavBar" src={cruz}/> </button>
             </div>
             <nav className="navNavBar">
                 <div className="posicionIzquierda">
                     <div className="contenedorSobreNosotros" style={{backgroundImage:`url(${imgSobreNosotros})`}}>
-                        <Link className="sobreNosotros"> Sobre Nosotros </Link>
+                        <Link to="/SobreNosotros"className="sobreNosotros"> Sobre Nosotros </Link>
                     </div>
                     <div className="contenedorServicios" style={{backgroundImage:`url(${imgServicios})`}}>
                         <Link className="servicios"> Servicios </Link>
