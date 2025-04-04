@@ -4,7 +4,7 @@ import ColumnOurJob from "./columnOurJob/columnOurJob.wrapper"
 import Footer from "../footer/footer"
 
 //Css
-import "./nuestroTrabajo.css"
+import "./nuestroTrabajo.scss"
 
 import { firstList } from "./constants/ourJobFirstList"
 import { secondList } from "./constants/ourJobSecondList"

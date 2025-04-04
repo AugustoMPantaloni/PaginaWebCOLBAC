@@ -1,7 +1,7 @@
 //Componentes
-import HeaderGlobal from "../../headerGlobal/headerGlobal"
+import HeaderGlobal from "../../header/header"
 //Css
-import "./header.css"
+import "./header.scss"
 
 
 const Header = () =>{

@@ -4,9 +4,9 @@ import NavBar from './components/navbar/navbar';
 import Home from './components/home/Home';
 import NuestroTrabajo from './components/nuestroTrabajo/nuestroTrabajo';
 import SobreNosotros from './components/SobreNosotros/SobreNosotros';
-//Css
-import './App.css';
-import Footer from './components/footer/footer';
+//SCss
+import './sass/main.scss';
+
 
 
 function App() {

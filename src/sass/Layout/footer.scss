@@ -1,0 +1,115 @@
+.footer {
+    width: 100%;
+    height: 180px;
+    background-color: #2D2D2D;
+    display: grid;
+    grid-template-columns: 20% 60% 10% 10%;
+    grid-template-areas: "logo espacio iconos enlaces";
+    align-items: center;
+    padding: 0 20px;
+  
+    &__logo {
+      grid-area: logo;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+  
+      img {
+        height: 100px;
+        z-index: 1;
+        transition: filter 0.3s ease;
+  
+        &:hover {
+          filter: brightness(1.1);
+        }
+      }
+    }
+  
+    &__text {
+      grid-area: espacio;
+      text-align: center;
+  
+      p {
+        color: #FFFFFF;
+        text-align: center;
+        font-family: "Manrope", sans-serif;
+        font-size: 9px;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  
+    &__social {
+      grid-area: iconos;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+  
+      &-icon {
+        &--instagram img {
+          padding-left: 1px;
+          height: 40px;
+          transition: all 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 5px #E1306C);
+          }
+        }
+  
+        &--contact img {
+          height: 35px;
+          transition: all 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2) drop-shadow(0 0 3px #4285F4);
+          }
+        }
+      }
+    }
+  
+    &__links {
+      grid-area: enlaces;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      &-item {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: "Manrope", sans-serif;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        position: relative;
+        padding-bottom: 2px;
+  
+        &:hover {
+          color: #F5F5F5;
+          transform: translateX(5px);
+        }
+  
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: #FFFFFF;
+          transition: width 0.3s ease;
+        }
+  
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,14 @@
+@use './base/reset';
+@use './utils/variables';
+@use './utils/mixins';
+@use './base/fonts';
+
+@use "./Layout/navBar.scss";
+@use "./Layout/header.scss";
+@use "./Layout/footer.scss";
+
+@use "./components/main/IntroIndex.scss";
+@use "./components/main/HeroIntroSection.scss";
+@use "./components/main/ServicesSection.scss";
+@use "./components/main/BrandMessage.scss";
+@use "./components/main/cards.scss"

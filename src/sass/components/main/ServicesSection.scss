@@ -1,0 +1,47 @@
+.services-section {
+    background-color: #242424;
+
+    &__header {
+        position: relative;
+    }
+
+    &__highlight-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 15px;
+    }
+
+    &__highlight {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        background-color: #DC010833;
+        width: 450px;
+        height: 39px;
+        z-index: 1;
+    }
+
+    &__text-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 15px;
+        margin-top: 30px;
+        z-index: 1;
+    }
+
+    &__title {
+        color: #F4E3D7;
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 17px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-self: center;
+    }
+}

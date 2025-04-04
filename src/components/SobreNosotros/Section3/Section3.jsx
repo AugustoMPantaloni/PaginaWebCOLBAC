@@ -1,4 +1,4 @@
-import "./Section3.css"
+import "./Section3.scss"
 import photos from "../../../assets/sobreNosotros/photos.png"
 const Section3 = ()=>{
     return(

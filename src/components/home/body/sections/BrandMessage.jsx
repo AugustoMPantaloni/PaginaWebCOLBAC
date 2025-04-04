@@ -1,7 +1,6 @@
-import "./section3.css"
 import { Link } from "react-router-dom";
 
-const Section3 = () =>{
+const BrandMessage= () =>{
     return(
         <div className="estilosBody3">
             <div className="contenedorComun3">
@@ -69,4 +68,4 @@ const Section3 = () =>{
     )
 }
 
-export default Section3
+export default BrandMessage

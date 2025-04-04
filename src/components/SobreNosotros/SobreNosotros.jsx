@@ -1,4 +1,4 @@
-import HeaderGlobal from "../headerGlobal/headerGlobal";
+import HeaderGlobal from "../header/header";
 import Footer from "../footer/footer";
 import Section1 from "./Section1/Section1";
 import Section2 from "./Section2/Section2";

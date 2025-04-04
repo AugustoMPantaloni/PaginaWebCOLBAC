@@ -1,4 +1,4 @@
-import "./Section1.css"
+import "./Section1.scss"
 
 const Section1 = ()=>{
     return (

@@ -1,44 +1,44 @@
-.estilosSection1{
+.hero-intro {
     width: 100%;
     height: 200px;
     background-color: #D9D9D9;
+    position: relative;
 }
 
-.contenedorComun1 {
+.hero-intro__content {
     position: relative;
     padding-top: 50px;
 }
 
-.recuadroRojo1{
+.hero-intro__highlight {
     position: absolute;
-    top:45px;
-    right: 300px;
+    top: 45%;
+    right: 40%;
     background-color: #DC010833;
-    width: 550px;
-    height: 75px;
+    width: 50%;
+    height: 45%;
     z-index: 1;
 }
 
 
-.estilosTexto1{
+.hero-intro__text {
     position: relative;
     display: flex;
-    margin-left: 100px;
+    margin-left: 60px;
     z-index: 1;
     color: #2D2D2D;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
-.estilosAbstract{
+.hero-intro__image {
     position: absolute;
-    top: 490px;
-    left: 850px;
-    z-index: 1;
+    top: 35%;
+    right: 1%;
+    transform: translateY(-50%);
     height: 250px;
     mix-blend-mode: multiply;
-
 }

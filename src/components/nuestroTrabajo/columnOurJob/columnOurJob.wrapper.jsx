@@ -1,6 +1,6 @@
 
 //Css
-import "./OurJob.css"
+import "./OurJob.scss"
 
 
 const ColumnOurJob = ({ tittle, content, imgSRC, idx }) =>{

@@ -1,11 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 //Componentes
-import HeaderGlobal from "../../headerGlobal/headerGlobal";
-//Css
-import "./header.css";
+import Header from "../../header/header";
 
-const Header = () => {
+
+const IntroIndex = () => {
     const containerRef = useRef(null);
 
   // Configuración de los círculos
@@ -68,7 +67,7 @@ const Header = () => {
     return (
     <div className="fondoHeader">
         <div className="contenedorCircular" ref={containerRef}>
-            <HeaderGlobal/>
+            <Header/>
             <div className="contenedorInferior">
                 <h1 className="titulo">
                     NAVEGAMOS <br/> EL PRESENTE,
@@ -94,4 +93,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default IntroIndex;

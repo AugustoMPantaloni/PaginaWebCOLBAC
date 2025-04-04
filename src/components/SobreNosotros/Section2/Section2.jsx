@@ -1,4 +1,4 @@
-import ("./Section2.css")
+import ("./Section2.scss")
 
 const Section2 =() =>{
     return(
