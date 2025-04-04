@@ -1,5 +1,6 @@
 .styleSection2{
-    background-image: url('../../../assets/backgroundAbstract.png');     background-size: cover; 
+    background-image: url('../../../assets/sobreNosotros/backgroundAbstract.png');
+    background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     width: 100%;
@@ -31,7 +32,7 @@
     border-radius: 20px;
     position: absolute;
     left: 150px;
-    top: 350px;
+    top: 320px;
     z-index: 2;
 }
 
