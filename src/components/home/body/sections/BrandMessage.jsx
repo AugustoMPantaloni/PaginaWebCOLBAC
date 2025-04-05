@@ -6,7 +6,7 @@ const BrandMessage= () =>{
             <div className="contenedorComun3">
                 <div className="contenedorRN1">
                     <div className="rectanguloNegro1"> 
-                    <p className="estilosTexto3"> FUSIONAMOS <span className="colorEstetica">ESTETICA</span> <br/> Y <span className="colorFuncionalidad">FUNCIONALIDAD</span> PARA  TRANSFORMAR <br/> TU IDENTIDAD DIGITAL <br/> EN UNA <span className="colorExperiencia">EXPERIENCIA INNOVADORA</span>.</p>
+                        <p className="estilosTexto3"> FUSIONAMOS <span className="colorEstetica">ESTETICA</span> <br/> Y <span className="colorFuncionalidad">FUNCIONALIDAD</span> PARA  TRANSFORMAR <br/> TU IDENTIDAD DIGITAL <br/> EN UNA <span className="colorExperiencia">EXPERIENCIA INNOVADORA</span>.</p>
                     </div>
                 </div>
                 <div className="contenedorCN1">
@@ -57,10 +57,12 @@ const BrandMessage= () =>{
                         <div className="circulo-punteado2"></div>  
                     </div>
                 </div>
-                <div className="rectanguloRojo">
-                        <div className="estilosTrabaja">
-                            <Link className="estilosTextoTrabaja">¡TE ESTAMOS ESPERANDO!</Link>
-                        </div>
+                <div className="contenedorRR1">
+                    <div className="rectanguloRojo">
+                            <div className="estilosTrabaja">
+                                <Link className="estilosTextoTrabaja">¡TE ESTAMOS ESPERANDO!</Link>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>

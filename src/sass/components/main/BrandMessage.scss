@@ -3,7 +3,7 @@
     padding-top: 40px;
     width: 100%;
     z-index: -2;
-    
+    overflow: hidden;
 }
 
 .contenedorComun3 {
@@ -166,7 +166,7 @@
 }
 
 .rectanguloOrang{
-    bottom: 170px;
+    bottom: 140px;
     position: relative;
     z-index: 0;
     border-bottom-right-radius: 20px;
@@ -181,7 +181,7 @@
     justify-content: center;
     align-items: center;
     top: 100px;
-    left: 60px;
+    left: 40px;
     position: relative;
     width: 250px;
     height: 45px;
@@ -262,8 +262,13 @@
     color: #FF6B00;
 }
 
+.contenedorRR1{
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
 .rectanguloRojo{
-    left: 488.5px;
     bottom: 350px;
     position: relative;
     z-index: -1;
@@ -280,7 +285,7 @@
     justify-content: center;
     align-items: center;
     top: 25px;
-    left: 300px;
+    left: 355px;
     position: relative;
     width: 200px;
     height: 45px;

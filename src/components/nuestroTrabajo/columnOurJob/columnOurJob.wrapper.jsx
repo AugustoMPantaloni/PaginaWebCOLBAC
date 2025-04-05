@@ -1,7 +1,5 @@
-
 //Css
-import "./OurJob.scss"
-
+import "./ColumnOurJob.scss"
 
 const ColumnOurJob = ({ tittle, content, imgSRC, idx }) =>{
     return(

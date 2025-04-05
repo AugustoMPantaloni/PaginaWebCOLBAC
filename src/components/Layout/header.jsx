@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo1 from "../../assets/logo1.png";
-import MenuNav from "../../assets/menuNav.png";
+import iconoNavBar from "../../assets/menuNav.png"
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
       </div>
       <button className="header__menu-button">
         <Link to="/navBar">
-          <img className="header__menu-img" src={MenuNav} alt="Menu" />
+          <img className="header__menu-img" src={iconoNavBar} alt="Menu" />
         </Link>
       </button>
     </header>

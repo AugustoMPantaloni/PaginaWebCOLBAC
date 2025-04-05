@@ -1,17 +1,19 @@
-import HeaderGlobal from "../header/header";
-import Footer from "../footer/footer";
-import Section1 from "./Section1/Section1";
-import Section2 from "./Section2/Section2";
-import Section3 from "./Section3/Section3";
+import Header from "../Layout/header";
+import Footer from "../Layout/footer";
+import AboutUs from "./Sections/AboutUs";
+import VisionMission from "./Sections/VisionMission";
+import AboutProcess from "./Sections/AboutProcess";
 
 const SobreNosotros = () =>{
     return(
         <>
-        <HeaderGlobal/>
-        <Section1/>
-        <Section2/>
-        <Section3/>
-        <Footer/>
+        <div className="fondoHeader">
+            <Header/>
+        </div>
+            <AboutUs/>
+            <VisionMission/>
+            <AboutProcess/>
+            <Footer/>
         </>
     )
 }

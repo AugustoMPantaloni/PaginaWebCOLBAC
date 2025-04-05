@@ -1,90 +1,78 @@
-.styleSection3{
-    background-color:#D9D9D9 ;
-    width: 100%;
-    height: 1150px;
-}
-
-.containerText4{
+.about-process {
+background-color: #F2F2F2;
+width: 100%;
+height: 1150px;
+&__header {
     width: 100%;
     height: 150px;
-    background-color:#2D2D2D ;
+    background-color: #2D2D2D;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.stylesText4{
-    font-family: Sofia Sans;
+&__main-text {
+    font-family: "Sofia Sans", sans-serif;
     font-weight: 900;
     font-size: 30px;
     line-height: 100%;
     letter-spacing: 0%;
-    color:  #F4E3D7;
+    color: #F2F2F2;
     text-shadow: -2px 3px 1px #DC0108;
 }
-
-.containerContent{
+&__content {
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     align-items: center;
-    padding-top: 20PX;
+    padding-top: 20px;
 }
-
-.styleTitle5{
+&__design-title {
     color: #FF6B00;
-    font-family: Sofia Sans;
+    font-family: "Sofia Sans", sans-serif;
     font-weight: 900;
     font-size: 35px;
     line-height: 100%;
     letter-spacing: 0%;
 }
-
-.styleSymbol{
+&__symbol {
     color: #01DCB7;
 }
-
-.styleProposito{
+&__purpose-highlight {
     color: #DC0108;
 }
-
-.styleText5{
+&__design-text {
     padding-left: 20px;
-    font-family: Sofia Sans;
+    font-family: "Sofia Sans", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
-
-.stylePhotos{
+&__team-photo {
     width: 100%;
     height: 500px;
+    object-fit: cover;
 }
-
-.styleFuncionalidad{
+&__functionality-highlight {
     color: #FF6B00;
 }
-
-.styleTransparencia{
+&__transparency-highlight {
     color: #01DCB7;
 }
-
-.styleSymbol2{
+&__symbol--red {
     color: #DC0108;
 }
-
-.styleTitle6{
-    font-family: Sofia Sans;
+&__values-title {
+    font-family: "Sofia Sans", sans-serif;
     font-weight: 900;
     font-size: 35px;
     line-height: 100%;
     letter-spacing: 0%;
 }
-
-.styleText6{
+&__values-text {
     padding-left: 20px;
-    font-family: Sofia Sans;
+    font-family: "Sofia Sans", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+}
 }

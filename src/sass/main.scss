@@ -2,13 +2,20 @@
 @use './utils/variables';
 @use './utils/mixins';
 @use './base/fonts';
-
+//Layout
 @use "./Layout/navBar.scss";
 @use "./Layout/header.scss";
 @use "./Layout/footer.scss";
-
+//Main
 @use "./components/main/IntroIndex.scss";
 @use "./components/main/HeroIntroSection.scss";
 @use "./components/main/ServicesSection.scss";
 @use "./components/main/BrandMessage.scss";
-@use "./components/main/cards.scss"
+@use "./components/main/cards.scss";
+//SobreNosotros
+@use "./components/sobreNosotros/AboutUs.scss";
+@use "./components/sobreNosotros/VisionMission.scss";
+@use "./components/sobreNosotros/AboutProcess.scss";
+//NuestroTrabajo
+@use "./components/nuestroTrabajo/ProcessHeader.scss";
+@use "./components/nuestroTrabajo/ourJob.scss";

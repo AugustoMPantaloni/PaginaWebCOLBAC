@@ -1,7 +1,7 @@
 //Componentes
-import IntroIndex from "./introIndex/IntroIndex";
+import IntroIndex from "./body/sections/IntroIndex";
 import Body from "./body/body";
-import Footer from "../footer/footer";
+import Footer from "../Layout/footer";
 
 const Home = () =>{
     return(
