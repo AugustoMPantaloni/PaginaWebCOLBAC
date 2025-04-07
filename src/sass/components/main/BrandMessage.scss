@@ -170,6 +170,7 @@
     position: relative;
     z-index: 0;
     border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
     width: 600px;
     height: 170px;
     background-color: #FF6B00;
@@ -263,7 +264,6 @@
 }
 
 .contenedorRR1{
-    
     display: flex;
     justify-content: flex-end;
 }
@@ -273,6 +273,7 @@
     position: relative;
     z-index: -1;
     border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 600px;
     height: 170px;
     background-color: #DC0108;
@@ -406,12 +407,6 @@
     transition: transform 0.4s ease-in-out;
 }
 
-.rectanguloNegro1, .rectanguloNegro2 {
-    transition: background-color 0.5s ease-in-out;
-}
-.rectanguloNegro1:hover, .rectanguloNegro2:hover {
-    background-color: #1f1f1f;
-}
 
 .cuadradoNegro1, .cuadradoNegro2 {
     transition: transform 0.4s ease-in-out;

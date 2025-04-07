@@ -1,23 +1,48 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-//Importacion de componentes
+import { useEffect } from 'react';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// Importación de componentes
 import NavBar from './components/Layout/navbar';
 import Home from './components/home/Home';
 import NuestroTrabajo from './components/nuestroTrabajo/nuestroTrabajo';
 import SobreNosotros from './components/SobreNosotros/SobreNosotros';
-//SCss
+import PantallaCarga from './components/Layout/pantallaCarga';
+// SCSS
 import './sass/main.scss';
+
+// Componente wrapper para refrescar AOS en cada cambio de ruta
+function AOSWrapper() {
+  const location = useLocation();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [location]);
+
+  return (
+    <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/navBar' element={<NavBar />} />
+      <Route path='/NuestroTrabajo' element={<NuestroTrabajo />} />
+      <Route path='/SobreNosotros' element={<SobreNosotros />} />
+    </Routes>
+  );
+}
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path="/navBar" element={<NavBar/>} />
-        <Route path="/NuestroTrabajo" element={<NuestroTrabajo/>}/>
-        <Route path="/SobreNosotros" element={<SobreNosotros/>}/>
-      </Routes>
+      <AOSWrapper />
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

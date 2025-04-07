@@ -28,7 +28,7 @@ const OurJob = () =>{
                         ))
                     }
                 </div>
-                <div className="ourWorkListImgContainer">
+                <div  className="ourWorkListImgContainer">
                     <img 
                         src={ourWorkListImg} 
                         alt="ourWorkListImg" 

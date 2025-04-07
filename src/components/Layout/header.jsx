@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import logo1 from "../../assets/logo1.png";
-import iconoNavBar from "../../assets/menuNav.png"
+import iconoNavBar from "../../assets/menuNav.png";
+import React, { useState } from "react";
+import NavBar from "./navbar";
 
 const Header = () => {
+  const [menu, setMenu] = useState(false);
+
+  const mostrarMenu = () => setMenu(true);
+  const ocultarMenu = () => setMenu(false);
+
   return (
     <header className="header">
       <div className="header__logo-container">
@@ -11,11 +18,18 @@ const Header = () => {
         </Link>
         <p className="header__brand">&lt;colbac&gt;</p>
       </div>
-      <button className="header__menu-button">
-        <Link to="/navBar">
-          <img className="header__menu-img" src={iconoNavBar} alt="Menu" />
-        </Link>
+
+      <button onClick={mostrarMenu} className="header__menu-button">
+        <img className="header__menu-img" src={iconoNavBar} alt="Menu" />
       </button>
+
+      {menu && (
+        <div className="popup-overlay" onClick={ocultarMenu}>
+          <div className="popup-menu" onClick={(e) => e.stopPropagation()}>
+            <NavBar onClose={ocultarMenu}/>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

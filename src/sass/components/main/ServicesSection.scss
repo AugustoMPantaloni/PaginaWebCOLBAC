@@ -1,4 +1,4 @@
-.services-section {
+    .services-section {
     background-color: #242424;
 
     &__header {
@@ -15,7 +15,7 @@
         position: absolute;
         top: 20px;
         right: 15px;
-        background-color: #DC010833;
+        background-color: #dc010833;
         width: 450px;
         height: 39px;
         z-index: 1;
@@ -31,7 +31,7 @@
     }
 
     &__title {
-        color: #F4E3D7;
+        color: #f4e3d7;
         font-family: "Manrope", sans-serif;
         font-optical-sizing: auto;
         font-weight: 200;
@@ -41,7 +41,29 @@
 
     &__cards {
         display: flex;
-        flex-wrap: nowrap;
-        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
-}
+    }
+
+    // Estilos específicos del carrusel
+    .services-section__swiper {
+    padding: 30px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    .swiper-slide {
+    display: flex;
+    justify-content: center;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+    color: #ff6b00;
+    }
+
+    .swiper-pagination-bullet-active {
+    background: #ff6b00;
+    }

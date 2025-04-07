@@ -26,6 +26,30 @@ const data =  [
         "backgroundColor": "#DC0108",
         "borderColor":"#DC0108",
         "shadowColor":"#DC0108"
+    },
+    {
+        "title": "Optimización y rediseño web",
+        "description": "🚀 <strong>Potenciamos tu sitio</strong>. Si tu web necesita mejorar su velocidad, accesibilidad o diseño, analizamos y optimizamos cada detalle para asegurar su mejor rendimiento. Renueva tu presencia digital y alcanza mejores resultados.",
+        "icono": iconoWeb,
+        "backgroundColor": "#DC0108",
+        "borderColor":"#DC0108",
+        "shadowColor":"#DC0108"
+    },
+    {
+        "title": "Optimización y rediseño web",
+        "description": "🚀 <strong>Potenciamos tu sitio</strong>. Si tu web necesita mejorar su velocidad, accesibilidad o diseño, analizamos y optimizamos cada detalle para asegurar su mejor rendimiento. Renueva tu presencia digital y alcanza mejores resultados.",
+        "icono": iconoWeb,
+        "backgroundColor": "#DC0108",
+        "borderColor":"#DC0108",
+        "shadowColor":"#DC0108"
+    },
+    {
+        "title": "Optimización y rediseño web",
+        "description": "🚀 <strong>Potenciamos tu sitio</strong>. Si tu web necesita mejorar su velocidad, accesibilidad o diseño, analizamos y optimizamos cada detalle para asegurar su mejor rendimiento. Renueva tu presencia digital y alcanza mejores resultados.",
+        "icono": iconoWeb,
+        "backgroundColor": "#DC0108",
+        "borderColor":"#DC0108",
+        "shadowColor":"#DC0108"
     }
 ]
 export default data

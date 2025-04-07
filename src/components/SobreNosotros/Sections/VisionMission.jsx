@@ -1,12 +1,14 @@
 const VisionMission = () => {
     return (
         <div className="about-section">
-        {/* Rectángulo Naranja */}
         <div className="about-section__orange-position">
-            <div className="about-section__orange-bar"/> 
+            <div 
+            className="about-section__orange-bar"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            /> 
         </div>
-        
-        {/* Texto Visión */}
         <div className="about-section__vision-box">
             <h2 className="about-section__vision-heading">Nuestra vision</h2>
             <p className="about-section__vision-text">
@@ -15,13 +17,14 @@ const VisionMission = () => {
             de cada marca y potencien su presencia en el mundo digital.
             </p>
         </div>
-
-        {/* Rectángulo Turquesa */}
         <div className="about-section__teal-position">
-            <div className="about-section__teal-bar"/> 
+            <div
+            className="about-section__teal-bar"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            /> 
         </div>
-        
-        {/* Texto Misión */}
         <div className="about-section__mission-box">
             <h2 className="about-section__mission-heading">Nuestra mision</h2>
             <p className="about-section__mission-text"> 
