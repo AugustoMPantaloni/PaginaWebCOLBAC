@@ -23,8 +23,7 @@ const ServicesSection = () => {
                 </div>
                 <div className="services-section__text-wrapper">
                     <h2 className="services-section__title">
-                        SERVICIOS DE DESARROLLO DE SOFTWARE,<br />
-                        ADAPTANDO CADA PROYECTO A LAS NECESIDADES DEL CLIENTE.
+                    DEL “TENGO UNA IDEA” AL “¡ESTÁ ONLINE!”
                     </h2>
                 </div>
             </div>

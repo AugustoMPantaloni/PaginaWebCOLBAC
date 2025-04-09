@@ -16,7 +16,7 @@ const Home = () =>{
         const timer = setTimeout(() => {
             setCargando(false);
             localStorage.setItem("pantallaCargaMostrada", "true");
-        }, 1500);
+        }, 15000);
         return () => clearTimeout(timer);
         }
     }, []);

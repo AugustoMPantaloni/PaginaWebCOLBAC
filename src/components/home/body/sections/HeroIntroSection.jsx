@@ -18,10 +18,9 @@ return (
             data-aos-easing="ease-in-out"
             className="hero-intro__text"
         >
-            EN COLBAC LLEVAMOS TU VISIÓN AL MUNDO DIGITAL <br />
-            CON SOLUCIONES DE DESARROLLO A MEDIDA,
-            <br />
-            DESDE LA IDEA INICIAL HASTA UN PRODUCTO FUNCIONAL Y SÓLIDO.
+        NO HACEMOS MAGIA. HACEMOS SOFTWARE.<br/>
+        Y LO HACEMOS BIEN: ENTENDEMOS TU IDEA,<br/>
+        LA CONVERTIMOS EN ESTRATEGIA Y EN UNA HERRAMIENTA QUE IMPACTA Y CRECE.
         </h2>
         </div>
         <img

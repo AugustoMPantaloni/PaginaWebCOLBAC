@@ -69,10 +69,12 @@ const IntroIndex = () => {
         <div className="contenedorCircular" ref={containerRef}>
             <Header/>
             <div className="contenedorInferior">
-                <h1 className="titulo">
-                    NAVEGAMOS <br/> EL PRESENTE,
-                    <br/> <span className="color">DESARROLLAMOS EL <br/> MAÑANA.</span>
-                </h1>
+            <h1 className="titulo">
+                DEL PRESENTE AL FUTURO, <br />
+                SIN ESCALAS.<br />
+                <span className="color">DISEÑAMOS TECNOLOGÍA</span> <br/>
+                HECHA PARA DURAR.
+            </h1>
             </div>
             {/* Círculos animados */}
             {circles.map((circle) => (

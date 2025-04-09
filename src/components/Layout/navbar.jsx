@@ -51,7 +51,7 @@ const NavBar = ({ onClose }) => {
             style={{ backgroundImage: `url(${imgNuestroTrabajo})` }}
           >
             <Link to="/NuestroTrabajo" className="navbar__link">
-              Nuestro Trabajo
+              Nuestro proceso
             </Link>
           </div>
         </div>
