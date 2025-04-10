@@ -18,7 +18,7 @@ return (
                 
             >
             NO HACEMOS MAGIA. HACEMOS SOFTWARE.<br/>
-            Y LO HACEMOS BIEN: ENTENDEMOS TU IDEA,<br/>
+            Y LO HACEMOS BIEN:<br/> ENTENDEMOS TU IDEA,
             LA CONVERTIMOS EN ESTRATEGIA Y EN UNA HERRAMIENTA QUE IMPACTA Y CRECE.
             </h2>
         </div>

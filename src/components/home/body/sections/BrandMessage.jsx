@@ -5,23 +5,21 @@ return (
     <div className="estilosBody3">
         <div className="contenedorComun3">
             <div className="contenedorRN1">
-            <div
-                className="rectanguloNegro1"
-                data-aos="flip-left"
-                data-aos-duration="900"
-                data-aos-delay="100"
-                data-aos-easing="ease-in-out"
-            >
-                <p className="estilosTexto3">
-                {" "}
-                FUSIONAMOS <span className="colorEstetica">
-                    ESTETICA
-                </span> <br /> Y{" "}
-                <span className="colorFuncionalidad">FUNCIONALIDAD</span> PARA
-                TRANSFORMAR <br /> TU IDENTIDAD DIGITAL <br /> EN UNA{" "}
-                <span className="colorExperiencia">EXPERIENCIA INNOVADORA</span>.
-                </p>
-            </div>
+                <div
+                    className="rectanguloNegro1"
+                    data-aos="flip-left"
+                    data-aos-duration="900"
+                    data-aos-delay="100"
+                    data-aos-easing="ease-in-out"
+                >
+                    <p className="estilosTexto3">
+                    TU PRESENCIA DIGITAL NECESITA <br/>
+                    <span className="colorFuncionalidad">RENDIMIENTO</span>,
+                    <span className="colorEstetica"> DISEÑO </span> Y
+                    <span className="colorExperiencia"> ESTRATEGIA.<br/> </span> 
+                    NOSOTROS LO HACEMOS REALIDAD.
+                    </p>
+                </div>
             </div>
             <div className="contenedorCN1">
             <div className="cuadradoNegro1">
@@ -42,33 +40,34 @@ return (
             </div>
             </div>
             <div className="contenedorRO1">
-            <div className="rectanguloOrang">
-                <div className="estilosContactanos">
-                <Link className="estilosTextoContactanos">
-                    ¡CONTACTANOS Y CONOCENOS!
-                </Link>
+                <div className="rectanguloOrang">
+                    <div className="estilosContactanos">
+                        <Link className="estilosTextoContactanos">
+                            ¡CONTACTANOS Y CONOCENOS!
+                        </Link>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
         <div className="contenedorComun4">
             <div className="contenedorRN2">
-            <div 
-                className="rectanguloNegro2"
-                data-aos="flip-right"
-                data-aos-duration="900"
-                data-aos-delay="100"
-                data-aos-easing="ease-in-out"
-            >
-                <p className="estilosTexto4">
-                {" "}
-                QUEREMOS CONOCERTE,
-                <br /> <span className="colorSumate">SUMATE</span> A NUESTRO{" "}
-                <span className="colorEquipo">EQUIPO</span> Y <br />{" "}
-                <span className="colorConstruyamos">CONSTRUYAMOS JUNTOS</span> EL{" "}
-                <br /> FUTURO DIGITAL.
-                </p>
-            </div>
+                <div 
+                    className="rectanguloNegro2"
+                    data-aos="flip-right"
+                    data-aos-duration="900"
+                    data-aos-delay="100"
+                    data-aos-easing="ease-in-out"
+                >
+                    <p className="estilosTexto4">
+                        SI TE 
+                        <span className="colorConstruyamos"> APASIONA </span>
+                        LA TECNOLOGÍA Y <br /> EL DISEÑO, <br />
+                        TE ESTAMOS BUSCANDO. <br />
+                        <span className="colorSumate"> SUMATE </span> 
+                        A NUESTRO 
+                        <span className="colorEquipo"> EQUIPO </span>
+                    </p>
+                </div>
             </div>
             <div className="contenedorCN2">
             <div className="cuadradoNegro2">

@@ -21,7 +21,7 @@ const Home = () =>{
         }
     }, []);
 
-    if (cargando) return <PantallaCarga />;
+    if (cargando) return <PantallaCarga/>;
     return(
         <>
             <IntroIndex/>

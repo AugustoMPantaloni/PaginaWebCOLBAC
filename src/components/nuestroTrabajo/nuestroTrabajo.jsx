@@ -9,9 +9,7 @@ import Footer from "../Layout/footer"
 const NuestroTrabajo = () =>{
     return(
         <>
-        <div className="fondoHeader">
-            <Header/>
-        </div>
+            <Header style={{ backgroundColor: ' #f0f0f0' }} />
             <ProcessHeader/>
             <OurJob/>
             <Footer/>

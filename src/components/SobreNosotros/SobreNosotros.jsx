@@ -7,9 +7,6 @@ import AboutProcess from "./Sections/AboutProcess";
 const SobreNosotros = () =>{
     return(
         <>
-        <div className="fondoHeader">
-            <Header/>
-        </div>
             <AboutUs/>
             <VisionMission/>
             <AboutProcess/>

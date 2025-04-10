@@ -2,7 +2,8 @@
     width: 100%;
     height: auto; 
     padding: 2rem 1rem;
-    background-color: #F2F2F2;
+    background: rgb(250,147,70);
+    background: linear-gradient(0deg, rgba(250,147,70,1) 0%, rgba(255,107,0,1) 100%);
     position: relative;
 }
 
@@ -14,9 +15,9 @@
 
 .hero-intro__highlight {
     position: absolute;
-    top: 30%;
+    top: 32%;
     right: 30%;
-    background-color: #DC010833;
+    background-color: #3c3b3b73;
     width: 60%;
     height: 22%;
     z-index: 0;
@@ -27,22 +28,22 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 100px;
     z-index: 1;
-    color: #2d2d2d;
+    color: #F2F2F2;
     font-family: "Manrope", sans-serif;
-    font-weight: 800;
-    line-height: 1.4;
-    font-size: 25px;
-    max-width: 750px;
+    font-weight: 400;
+    line-height: 1.4; 
+    font-size: 40px;
+    width: 900px;
 }
 
 .hero-intro__image {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 2%;
     transform: translateY(-50%);
-    height: 50vh;
+    height: 65vh;
     mix-blend-mode: multiply;
     z-index: 0;
 }

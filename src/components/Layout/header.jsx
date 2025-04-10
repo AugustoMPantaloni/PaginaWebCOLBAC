@@ -4,14 +4,14 @@ import iconoNavBar from "../../assets/menuNav.png";
 import React, { useState } from "react";
 import NavBar from "./navbar";
 
-const Header = () => {
+const Header = ({style}) => {
   const [menu, setMenu] = useState(false);
 
   const mostrarMenu = () => setMenu(true);
   const ocultarMenu = () => setMenu(false);
 
   return (
-    <header className="header">
+    <header style={style} className="header">
       <div className="header__logo-container">
         <Link to="/">
           <img className="header__logo" src={logo1} alt="Logo" />

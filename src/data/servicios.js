@@ -42,7 +42,7 @@ shadowColor: "#A78BFA",
 {
 title: "Desarrollo <br/>de Apps",
 description:
-    "📱 <strong>Aplicaciones móviles</strong><br/>Desarrollamos apps escalables con paneles de administración y experiencia fluida en Android y iOS.",
+    "📱 <strong>Aplicaciones móviles</strong><br/>Desarrollamos apps escalables con paneles de administración y experiencia fluida en Android.",
 icono: iconoWeb,
 backgroundColor: "#1F1F1F",
 borderColor: "#0DB39E",
@@ -69,7 +69,7 @@ shadowColor: "#F9A826",
 {
 title: "Implementación <br/>de API",
 description:
-    "🔗 <strong>Integraciones seguras y eficientes</strong><br/>Conectamos servicios y plataformas para automatizar procesos y escalar funcionalidades.",
+    "🔗 <strong>Integraciones eficientes</strong><br/>Conectamos servicios y plataformas para automatizar procesos y escalar funcionalidades.",
 icono: iconoWeb,
 backgroundColor: "#1F1F1F",
 borderColor: "#57CC99",

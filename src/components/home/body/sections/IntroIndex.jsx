@@ -9,18 +9,18 @@ const IntroIndex = () => {
 
   // Configuración de los círculos
     const circles = [
-    { id: 1, size: 60, color: "#dc0108", speedX: 1, speedY: 0.5 },  // Más grande y más lento
-    { id: 2, size: 100, color: "#dc0108", speedX: 1, speedY: 1 },   // Más grande y más lento
-    { id: 3, size: 70, color: "#dc0108", speedX: 1.5, speedY: 0.5 }, // Más grande y más lento
-    { id: 4, size: 110, color: "#dc0108", speedX: 1, speedY: 2 },    // Más grande y más lento
-    { id: 5, size: 50, color: "#dc0108", speedX: 1, speedY: 1 },     // Más grande y más lento
-    { id: 6, size: 160, color: "#dc0108", speedX: 0.5, speedY: 1 },  // Más grande y más lento
-    { id: 7, size: 75, color: "#dc0108", speedX: 1, speedY: 0.5 },   // Más grande y más lento
-    { id: 8, size: 105, color: "#dc0108", speedX: 1, speedY: 1.5 },  // Más grande y más lento
-    { id: 9, size: 65, color: "#dc0108", speedX: 1.5, speedY: 1 },   // Más grande y más lento
-    { id: 10, size: 180, color: "#dc0108", speedX: 1, speedY: 1 },   // Más grande y más lento
-    { id: 11, size: 220, color: "#dc0108", speedX: 1, speedY: 0.5 }, // Más grande y más lento
-    { id: 12, size: 130, color: "#dc0108", speedX: 2, speedY: 0.1 }, // Más grande y más lento
+    { id: 1, size: 90, color: "#dc0108", speedX: 1, speedY: 0.5 },  // Más grande y más lento
+    { id: 2, size: 130, color: "#dc0108", speedX: 1, speedY: 1 },   // Más grande y más lento
+    { id: 3, size: 100, color: "#dc0108", speedX: 1.5, speedY: 0.5 }, // Más grande y más lento
+    { id: 4, size: 140, color: "#dc0108", speedX: 1, speedY: 2 },    // Más grande y más lento
+    { id: 5, size: 80, color: "#dc0108", speedX: 1, speedY: 1 },     // Más grande y más lento
+    { id: 6, size: 190, color: "#dc0108", speedX: 0.5, speedY: 1 },  // Más grande y más lento
+    { id: 7, size: 105, color: "#dc0108", speedX: 1, speedY: 0.5 },   // Más grande y más lento
+    { id: 8, size: 135, color: "#dc0108", speedX: 1, speedY: 1.5 },  // Más grande y más lento
+    { id: 9, size: 95, color: "#dc0108", speedX: 1.5, speedY: 1 },   // Más grande y más lento
+    { id: 10, size: 210, color: "#dc0108", speedX: 1, speedY: 1 },   // Más grande y más lento
+    { id: 11, size: 250, color: "#dc0108", speedX: 1, speedY: 0.5 }, // Más grande y más lento
+    { id: 12, size: 160, color: "#dc0108", speedX: 2, speedY: 0.1 }, // Más grande y más lento
     ];
 
   // Lógica de animación
@@ -67,7 +67,7 @@ const IntroIndex = () => {
     return (
     <div className="fondoHeader">
         <div className="contenedorCircular" ref={containerRef}>
-            <Header/>
+        <Header/>
             <div className="contenedorInferior">
                 <h1 className="titulo">
                     DEL PRESENTE AL FUTURO, <br />
