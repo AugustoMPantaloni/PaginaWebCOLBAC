@@ -1,61 +1,61 @@
 import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 import Cards from "../../cards/cards";
 import CardsData from "../../../../data/servicios";
 
 const ServicesSection = () => {
     const [cards, setCards] = useState([]);
+    const [activeVideo, setActiveVideo] = useState(null);
+    const [isHoveringCard, setIsHoveringCard] = useState(false); // <-- nuevo
 
-    useEffect(() => {
-        setCards(CardsData);
-    }, []);
+useEffect(() => {
+    setCards(CardsData);
+}, []);
 
-    return (
-        <section className="services-section">
-            <div className="services-section__header">
-                <div className="services-section__highlight-wrapper">
-                    <div className="services-section__highlight" />
-                </div>
-                <div className="services-section__text-wrapper">
-                    <h2 className="services-section__title">
-                    DEL “TENGO UNA IDEA” AL “¡ESTÁ ONLINE!”
-                    </h2>
-                </div>
+return (
+    <section className="services-section" data-aos="fade-up">
+        <video
+        className={`services-section__background-video ${activeVideo ? "visible" : ""}`}
+        src={activeVideo || ""}
+        autoPlay
+        muted
+        loop
+        playsInline
+        />
+        <div className="services-section__header">
+            <div className="services-section__text-wrapper">
+                <h2 className={`services-section__title ${isHoveringCard ? "hovered" : ""}`}>
+            SOLUCIONES COLBAC
+                </h2>
+                <h2 className={`services-section__titleTwo ${isHoveringCard ? "hovered" : ""}`}>
+            QUE HACEMOS
+                </h2>
             </div>
-            <Swiper
-                modules={[Navigation, Pagination]}
-                spaceBetween={1}
-                slidesPerView={4}
-                navigation
-                pagination={{ clickable: true }}
-                breakpoints={{
-                    640: { slidesPerView: 1 },
-                    768: { slidesPerView: 3 },
-                    1024: { slidesPerView: 4 },
-                    1440: { slidesPerView: 5 }
-                }}
-                className="services-section__swiper"
-            >
-                {cards.map((card, index) => (
-                    <SwiperSlide key={index}>
-                        <Cards
-                            title={card.title}
-                            description={card.description}
-                            icono={card.icono}
-                            backgroundColor={card.backgroundColor}
-                            borderColor={card.borderColor}
-                            shadowColor={card.shadowColor}
-                        />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </section>
-    );
+        </div>
+        <div className="services-section__cards">
+            {cards.map((card, index) => (
+                <Cards
+                    key={index}
+                    title={card.title}
+                    description={card.description}
+                    icono={card.icono}
+                    backgroundColor={card.backgroundColor}
+                    borderColor={card.borderColor}
+                    shadowColor={card.shadowColor}
+                    video={card.video}
+                    onHover={(video) => {
+                    setActiveVideo(video);
+                    setIsHoveringCard(true);
+                    }}
+                    onLeave={() => {
+                    setActiveVideo(null);
+                    setIsHoveringCard(false);
+                    }}
+                />
+            ))}
+        </div>
+    </section>
+);
 };
 
 export default ServicesSection;
+

@@ -8,12 +8,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
+  &.scrolled {
+    background-color: rgba(244, 227, 215, 0.85);
+  }
 
   &__logo-container {
     display: flex;
     align-items: center;
     z-index: 3;
+    margin-left: 200px;
   }
 
   &__logo {
@@ -23,14 +28,15 @@
   &__brand {
     font-family: "Baumans", system-ui;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 35px;
     font-style: normal;
     margin-left: 5px;
+    margin-bottom: 10px;
     z-index: 1;
   }
 
   &__menu-button {
-    position: relative; // o absolute si preferís, pero sin left raro
+    position: relative;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -38,13 +44,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin-right: 200px;
+
+    &:hover {
+      transform: scale(1.1);  // Hace que el botón se agrande ligeramente
+    }
+
+    &:focus {
+      outline: none;  // Quita el outline al hacer foco
+    }
   }
 
   &__menu-img {
     width: 45px;
     height: 45px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      filter: brightness(0.8);  // Oscurece el icono al pasar el ratón
+      transform: rotate(10deg);  // Rota el icono ligeramente
+    }
   }
 }
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -56,6 +79,6 @@
   justify-content: center;
   align-items: center;
   z-index: 998;
-  padding-top: 28%;
+  padding-top: 30%;
   padding-bottom: 30%;
 }
