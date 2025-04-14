@@ -1,7 +1,7 @@
 .about-process {
 background-color: #F2F2F2;
 width: 100%;
-height: 1150px;
+height: 110vh;
 &__header {
     width: 100%;
     height: 150px;
@@ -13,66 +13,29 @@ height: 1150px;
 &__main-text {
     font-family: "Sofia Sans", sans-serif;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 100%;
     letter-spacing: 0%;
     color: #F2F2F2;
     text-shadow: -2px 3px 1px #DC0108;
+    text-align: center;
 }
 &__content {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: center;
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-left: 40PX;
 }
 &__design-title {
     color: #FF6B00;
     font-family: "Sofia Sans", sans-serif;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 100%;
     letter-spacing: 0%;
-}
-&__symbol {
-    color: #01DCB7;
 }
 &__purpose-highlight {
-    color: #DC0108;
-}
-&__design-text {
-    padding-left: 20px;
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-}
-&__team-photo {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-&__functionality-highlight {
-    color: #FF6B00;
-}
-&__transparency-highlight {
-    color: #01DCB7;
-}
-&__symbol--red {
-    color: #DC0108;
-}
-&__values-title {
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 900;
-    font-size: 35px;
-    line-height: 100%;
-    letter-spacing: 0%;
-}
-&__values-text {
-    padding-left: 20px;
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    color: #2D2D2D;
 }
 }

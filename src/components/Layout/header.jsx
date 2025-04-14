@@ -38,6 +38,7 @@ const Header = ({ style }) => {
 
       <button onClick={mostrarMenu} className="header__menu-button">
         <img className="header__menu-img" src={iconoNavBar} alt="Menu" />
+        <p className="header__menu-p"> MENU </p>
       </button>
 
       {menu && (

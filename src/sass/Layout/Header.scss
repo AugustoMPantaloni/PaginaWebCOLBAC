@@ -22,13 +22,13 @@
   }
 
   &__logo {
-    height: 80px;
+    height: 70px;
   }
 
   &__brand {
     font-family: "Baumans", system-ui;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 30px;
     font-style: normal;
     margin-left: 5px;
     margin-bottom: 10px;
@@ -42,23 +42,31 @@
     cursor: pointer;
     z-index: 999;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
     transition: transform 0.3s ease, filter 0.3s ease;
     margin-right: 200px;
 
     &:hover {
-      transform: scale(1.1);  // Hace que el botón se agrande ligeramente
+      transform: scale(1.1);  
     }
 
     &:focus {
-      outline: none;  // Quita el outline al hacer foco
+      outline: none;  
     }
   }
 
+  &__menu-p{
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    line-height: 1.4; 
+    font-size: 15px;
+  }
   &__menu-img {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     transition: filter 0.3s ease, transform 0.3s ease;
 
     &:hover {
@@ -79,6 +87,6 @@
   justify-content: center;
   align-items: center;
   z-index: 998;
-  padding-top: 30%;
+  padding-top: 33%;
   padding-bottom: 30%;
 }

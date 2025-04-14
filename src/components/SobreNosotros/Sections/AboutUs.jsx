@@ -13,10 +13,10 @@ const AboutUs = () => {
           <h1 className="about-us__title" data-aos="fade-down">¿QUIÉNES SOMOS?</h1>
           <p className="about-us__text" data-aos="fade-right">
             En COLBAC no seguimos tendencias: las creamos.<br />
-            Combinamos diseño de alto nivel, tecnología precisa y estrategia que funciona.<br />
+            Combinamos diseño de alto nivel, tecnología precisa y <br />estrategia que funciona.<br />
             Diseñamos experiencias, desarrollamos productos que rinden<br />
             y construimos marcas que se diferencian desde el primer clic.<br />
-            Si tu proyecto busca impacto, escalabilidad y estilo, hablás con el equipo correcto.
+            Si tu proyecto busca impacto, escalabilidad y estilo<br/> hablás con el equipo correcto.
           </p>
         </div>
       </div>
