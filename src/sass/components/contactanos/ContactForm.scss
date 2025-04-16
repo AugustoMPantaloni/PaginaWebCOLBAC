@@ -1,0 +1,158 @@
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+    &__title {
+        font-family: "Sofia Sans", sans-serif;
+        font-weight: 900;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: #FF6B00;
+        text-align: center;
+    }
+
+    &__description {
+        font-family: "Sofia Sans", sans-serif;
+        font-weight: 700;
+        line-height: 1.4;
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+        color: #2D2D2D;
+        
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__form-info{
+        display: flex;
+        flex-direction: row;
+        gap: 20px
+    }
+
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+
+    &--checkbox {
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5rem;
+    }
+    }
+
+    &__label {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        line-height: 1.4; 
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #333;
+
+    &--checkbox {
+        font-weight: 400;
+        margin-bottom: 0;
+        color: #444;
+    }
+    }
+
+    &__input {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        line-height: 1.4; 
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        transition: border 0.3s ease;
+    &:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+    }
+
+    &__checkbox {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        line-height: 1.4; 
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    &__submit {
+        padding: 1rem 2rem;
+        background-color: #FF6B00;
+        border: none;
+        color: #fff;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+    &:hover {
+        background-color: #a74f10;
+    }
+    }
+
+    &__status {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+        color: #28a745; 
+    }
+}
+
+.contact-info {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    top: 35%;
+    left: 3%;
+
+    &__icon {
+        width: 55px;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /* Cambié el centro a 'flex-start' para alinear los elementos a la izquierda */
+        gap: 5px;
+    }
+
+    &__address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 50px;
+        background-color: #FF6B00;
+        border-radius: 5px; 
+    }
+
+    &__city {
+        color: white;
+        font-family: "Sofia Sans", sans-serif;
+        font-weight: 700;
+        line-height: 1.4;
+        font-size: 25px;
+    }
+
+    &__email {
+        font-family: "Manrope", sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 1.4;
+        color: #2D2D2D; 
+    }
+}
+

@@ -10,11 +10,6 @@
     transform: rotateY(30deg) scale(0.8);
   }
 
-  &__logo-container {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 40px 20px 0;
-  }
 
   &__close-button {
     background: none;
@@ -112,5 +107,50 @@
       color: #ff6b00;
     }
   }
-  
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+
+  &-containerSocials{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+    &-icon {
+      &--instagram img {
+        height: 35px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+          filter: drop-shadow(0 0 5px #E1306C);
+        }
+      }
+
+      &--contact img {
+        height: 35px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+          filter: brightness(1.2) drop-shadow(0 0 3px #25D366);
+        }
+      }
+
+      &--facebook img {
+        height: 35px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+          filter: brightness(1.2) drop-shadow(0 0 3px #1877F2);
+        }
+      }
+    }
+  }
+
 }

@@ -1,6 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-//Componentes
 import Header from "../../../Layout/header";
 
 
@@ -67,7 +65,7 @@ const IntroIndex = () => {
     return (
     <div className="fondoHeader">
         <div className="contenedorCircular" ref={containerRef}>
-        <Header/>
+            <Header/>
             <div className="contenedorInferior">
                 <h1 className="titulo">
                     DEL PRESENTE AL FUTURO, <br />
@@ -78,17 +76,17 @@ const IntroIndex = () => {
             </div>
             {circles.map((circle) => (
                 <div
-                key={circle.id}
-                className="circle"
-                style={{
-                    width: `${circle.size}px`,
-                    height: `${circle.size}px`,
-                    border: `2px dashed ${circle.color}`,
-                }}
-                data-speed-x={circle.speedX}
-                data-speed-y={circle.speedY}
+                    key={circle.id}
+                    className="circle"
+                    style={{
+                        width: `${circle.size}px`,
+                        height: `${circle.size}px`,
+                        border: `2px dashed ${circle.color}`,
+                    }}
+                    data-speed-x={circle.speedX}
+                    data-speed-y={circle.speedY}
                 ></div>
-            ))}
+                ))}
         </div>
     </div>
     );

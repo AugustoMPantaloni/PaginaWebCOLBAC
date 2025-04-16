@@ -8,6 +8,10 @@ import imgServicios from "../../assets/menuNav/imgServicios.webp";
 import imgSobreNosotros from "../../assets/menuNav/imgSobreNosotros.webp";
 import cruz from "../../assets/cruz.png";
 
+import LogoFacebook from "../../assets/logoFacebook.png"
+import LogoInstagram from "../../assets/logoInstagram.png"
+import LogoWsp from "../../assets/logoWsp.png"
+
 const NavBar = ({ onClose }) => {
   const [isClosing, setIsClosing] = useState(false);
 
@@ -20,10 +24,29 @@ const NavBar = ({ onClose }) => {
 
   return (
     <div className={`navbar ${isClosing ? "navbar--closing" : ""}`} data-aos="zoom-in">
-      <div className="navbar__logo-container">
-        <button onClick={handleClose} className="navbar__close-button">
-          <img className="navbar__close-icon" src={cruz} />
-        </button>
+      <div className="navbar__social">
+        <div className="navbar__social-containerSocials">
+          <div className="navbar__social-icon--instagram">
+              <Link to="#">
+                  <img src={LogoInstagram} alt="Instagram" />
+              </Link>
+          </div>
+          <div className="navbar__social-icon--contact">
+              <Link to="#">
+                  <img src={LogoWsp} alt="Wsp" />
+              </Link>
+          </div>
+          <div className="navbar__social-icon--facebook">
+              <Link to="#">
+                  <img src={LogoFacebook} alt="Facebook" />
+              </Link>
+          </div>
+        </div>
+        <div>
+          <button onClick={handleClose} className="navbar__close-button">
+            <img className="navbar__close-icon" src={cruz} />
+          </button>
+        </div>
       </div>
       <nav className="navbar__nav">
         <div className="navbar__group--left">
@@ -68,7 +91,7 @@ const NavBar = ({ onClose }) => {
             className="navbar__item navbar__item--contacto"
             style={{ backgroundImage: `url(${imgContactanos})` }}
           >
-            <Link className="navbar__link">Contactanos</Link>
+            <Link to="/Contactanos" className="navbar__link">Contactanos</Link>
           </div>
         </div>
       </nav>

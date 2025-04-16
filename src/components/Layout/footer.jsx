@@ -1,6 +1,7 @@
 import logo from "../../assets/logo2.png";
 import logoInstagram from "../../assets/logoInstagram.png";
-import logoContacto from "../../assets/logoContacto.png";
+import logoWsp from "../../assets/logoWsp.png";
+import logoFacebook from "../../assets/logoFacebook.png"
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -22,7 +23,12 @@ const Footer = () => {
                 </div>
                 <div className="footer__social-icon--contact">
                     <Link to="#">
-                        <img src={logoContacto} alt="Contacto" />
+                        <img src={logoWsp} alt="Wsp" />
+                    </Link>
+                </div>
+                <div className="footer__social-icon--facebook">
+                    <Link to="#">
+                        <img src={logoFacebook} alt="Contacto" />
                     </Link>
                 </div>
             </div>

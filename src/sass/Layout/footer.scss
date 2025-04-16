@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    height: 180px;
+    height: 200px;
     background-color: #2D2D2D;
     display: grid;
     grid-template-columns: 20% 60% 10% 10%;
@@ -35,7 +35,7 @@
         color: #F2F2F2;
         text-align: center;
         font-family: "Manrope", sans-serif;
-        font-size: 12px;
+        font-size: 15px;
         transition: all 0.3s ease;
   
         &:hover {
@@ -49,12 +49,11 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 15px;
+      gap: 10px;
   
       &-icon {
         &--instagram img {
-          padding-left: 1px;
-          height: 40px;
+          height: 50px;
           transition: all 0.3s ease;
   
           &:hover {
@@ -64,12 +63,22 @@
         }
   
         &--contact img {
-          height: 35px;
+          height: 50px;
           transition: all 0.3s ease;
   
           &:hover {
             transform: scale(1.1);
-            filter: brightness(1.2) drop-shadow(0 0 3px #4285F4);
+            filter: brightness(1.2) drop-shadow(0 0 3px #25D366);
+          }
+        }
+
+        &--facebook img {
+          height: 50px;
+          transition: all 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2) drop-shadow(0 0 3px #1877F2);
           }
         }
       }
@@ -85,7 +94,7 @@
         color: #F2F2F2;
         text-decoration: none;
         font-family: "Manrope", sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         transition: all 0.3s ease;
         position: relative;
         padding-bottom: 2px;

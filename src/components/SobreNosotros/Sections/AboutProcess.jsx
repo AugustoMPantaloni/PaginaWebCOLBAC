@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CardsTeam from "../cardsTeam/CardsTeam";
+import CardsTeam from "../cards/CardsTeam";
 import dataTeam from "../../../data/team";
 
 const AboutProcess = () => {

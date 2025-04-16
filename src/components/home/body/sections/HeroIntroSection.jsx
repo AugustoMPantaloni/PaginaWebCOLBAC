@@ -17,8 +17,8 @@ return (
                 data-aos-easing="ease-in-out"
                 
             >
-            NO HACEMOS MAGIA. HACEMOS SOFTWARE.<br/>
-            Y LO HACEMOS BIEN:<br/> ENTENDEMOS TU IDEA,
+            NO HACEMOS MAGIA. HACEMOS <span className="hero-intro__word">SOFTWARE</span>.<br/>
+            Y LO HACEMOS <span span className="hero-intro__word">BIEN</span>:<br/> ENTENDEMOS TU IDEA,
             LA CONVERTIMOS EN ESTRATEGIA Y EN UNA HERRAMIENTA QUE IMPACTA Y CRECE.
             </h2>
         </div>

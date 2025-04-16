@@ -8,6 +8,7 @@ import NavBar from './components/Layout/navbar';
 import Home from './components/home/Home';
 import NuestroTrabajo from './components/nuestroTrabajo/nuestroTrabajo';
 import SobreNosotros from './components/SobreNosotros/SobreNosotros';
+import Contactanos from './components/contactanos/contactanos';
 import PantallaCarga from './components/Layout/pantallaCarga';
 // SCSS
 import './sass/main.scss';
@@ -33,6 +34,7 @@ function AOSWrapper() {
       <Route path='/navBar' element={<NavBar />} />
       <Route path='/NuestroTrabajo' element={<NuestroTrabajo />} />
       <Route path='/SobreNosotros' element={<SobreNosotros />} />
+      <Route path="/Contactanos" element={<Contactanos/>}/>
     </Routes>
   );
 }
