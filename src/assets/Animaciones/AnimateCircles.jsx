@@ -1,35 +1,53 @@
-// AnimatedCircles.jsx
 import React, { useRef, useEffect } from 'react';
 
-// Configuración de círculos 
+const getRandomSpeed = (base, variation) => (base + (Math.random() * variation * 2 - variation)) * (Math.random() > 0.5 ? 1 : -1);
+
 const defaultCirclesConfig = [
-  { id: 1, size: 90, color: "#dc0108", speedX: 2, speedY: 1.5 },  
-    { id: 2, size: 130, color: "#dc0108", speedX: 2, speedY: 2 },   
-    { id: 3, size: 100, color: "#dc0108", speedX: 2.5, speedY: 1.5 }, 
-    { id: 4, size: 140, color: "#dc0108", speedX: 2, speedY: 3 },    
-    { id: 5, size: 80, color: "#dc0108", speedX: 2, speedY: 2 },     
-    { id: 6, size: 190, color: "#dc0108", speedX: 2.5, speedY: 2},  
-    { id: 7, size: 105, color: "#dc0108", speedX: 2, speedY: 1.5 },   
-    { id: 8, size: 135, color: "#dc0108", speedX: 2, speedY: 2.5 },  
-    { id: 9, size: 95, color: "#dc0108", speedX: 2.5, speedY: 2 },   
-    { id: 10, size: 210, color: "#dc0108", speedX: 2, speedY: 2 },   
-    { id: 11, size: 250, color: "#dc0108", speedX: 2, speedY: 1.5 }, 
-    { id: 12, size: 160, color: "#dc0108", speedX: 3, speedY: 1.1 }, 
+  { id: 1, size: 90, color: "#dc0108", speedX: getRandomSpeed(2, 1), speedY: getRandomSpeed(1.5, 0.8) },
+  { id: 2, size: 130, color: "#dc0108", speedX: getRandomSpeed(2, 1.2), speedY: getRandomSpeed(2, 1) },
+  { id: 3, size: 100, color: "#dc0108", speedX: getRandomSpeed(2.5, 1.5), speedY: getRandomSpeed(1.5, 1) },
+  { id: 4, size: 140, color: "#dc0108", speedX: getRandomSpeed(2, 1), speedY: getRandomSpeed(3, 1.2) },
+  { id: 5, size: 80, color: "#dc0108", speedX: getRandomSpeed(2, 1.5), speedY: getRandomSpeed(2, 1.5) },
+  { id: 6, size: 190, color: "#dc0108", speedX: getRandomSpeed(2.5, 1), speedY: getRandomSpeed(2, 1.3) },
+  { id: 7, size: 105, color: "#dc0108", speedX: getRandomSpeed(2, 1.8), speedY: getRandomSpeed(1.5, 1) },
+  { id: 8, size: 135, color: "#dc0108", speedX: getRandomSpeed(2, 1), speedY: getRandomSpeed(2.5, 1.5) },
+  { id: 9, size: 95, color: "#dc0108", speedX: getRandomSpeed(2.5, 1.2), speedY: getRandomSpeed(2, 1) },
+  { id: 10, size: 210, color: "#dc0108", speedX: getRandomSpeed(2, 1.5), speedY: getRandomSpeed(2, 1.8) },
+  { id: 11, size: 250, color: "#dc0108", speedX: getRandomSpeed(2, 1), speedY: getRandomSpeed(1.5, 1.2) },
+  { id: 12, size: 160, color: "#dc0108", speedX: getRandomSpeed(3, 2), speedY: getRandomSpeed(1.1, 0.9) },
 ];
 
 const AnimatedCircles = ({ 
   circles = defaultCirclesConfig,
-  circleClassName = 'animated-circle',
-  containerClassName = 'circles-container',
-  circleStyle = { border: '2px dashed #dc0108' },
+  containerStyle = {},
+  circleStyle = {}
 }) => {
   const containerRef = useRef(null);
+
+
+  const baseStyles = {
+    container: {
+      position: 'relative',
+      width: '100%',
+      height: '100%',
+      overflow: 'hidden',
+      minHeight: '100vh',
+      ...containerStyle
+    },
+    circle: {
+      position: 'absolute',
+      borderRadius: '50%',
+      opacity: 0.7,
+      border: '2px dashed',
+      ...circleStyle
+    }
+  };
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
-    const circleElements = container.querySelectorAll(`.${circleClassName}`);
+    const circleElements = container.querySelectorAll('[data-circle]');
 
     const moveCircles = () => {
       circleElements.forEach((circle) => {
@@ -44,7 +62,6 @@ const AnimatedCircles = ({
         x += speedX;
         y += speedY;
 
-        // Rebotar en bordes
         if (x + rect.width > containerRect.width || x < 0) {
           circle.dataset.speedX = -speedX;
         }
@@ -62,20 +79,21 @@ const AnimatedCircles = ({
     const animationId = requestAnimationFrame(moveCircles);
 
     return () => cancelAnimationFrame(animationId);
-  }, [circleClassName]);
+  }, []);
 
   return (
-    <div className={containerClassName} ref={containerRef}>
+    <div ref={containerRef} style={baseStyles.container}>
       {circles.map((circle) => (
         <div
           key={circle.id}
-          className={circleClassName}
+          data-circle="true"
           style={{
-            position: 'absolute',
+            ...baseStyles.circle,
             width: `${circle.size}px`,
             height: `${circle.size}px`,
-            ...circleStyle,
-            ...circle.customStyle,
+            borderColor: circle.color,
+            left: `${Math.random() * 100}%`, 
+            top: `${Math.random() * 100}%`,
           }}
           data-speed-x={circle.speedX}
           data-speed-y={circle.speedY}

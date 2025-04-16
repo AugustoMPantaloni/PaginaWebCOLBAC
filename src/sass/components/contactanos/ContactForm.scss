@@ -1,10 +1,30 @@
+.contact-page {
+position: relative; 
+overflow: hidden;   
+}
+
+.circle-container {
+position: absolute; 
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;        
+pointer-events: none; 
+}
+
+.contact,
+.contact-info {
+position: relative;
+z-index: 1;
+}
 
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 50px;
 
     &__title {
         font-family: "Sofia Sans", sans-serif;
@@ -125,8 +145,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start; /* Cambié el centro a 'flex-start' para alinear los elementos a la izquierda */
-        gap: 5px;
+        align-items: flex-start; 
     }
 
     &__address {

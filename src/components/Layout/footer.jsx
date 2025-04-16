@@ -1,7 +1,7 @@
-import logo from "../../assets/logo2.png";
-import logoInstagram from "../../assets/logoInstagram.png";
-import logoWsp from "../../assets/logoWsp.png";
-import logoFacebook from "../../assets/logoFacebook.png"
+import logo from "../../assets/logos/logo2.png";
+import logoInstagram from "../../assets/iconosSociales/logoInstagram.png";
+import logoWsp from "../../assets/iconosSociales/logoWsp.png";
+import logoFacebook from "../../assets/iconosSociales/logoFacebook.png"
 import { Link } from "react-router-dom";
 
 const Footer = () => {

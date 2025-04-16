@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logo1 from "../../assets/logo1.png";
-import iconoNavBar from "../../assets/menuNav.png";
+import logo1 from "../../assets/logos/logo1.png";
+import iconoNavBar from "../../assets/menuNav/menuNav.png";
 import React, { useState, useEffect } from "react";
 import NavBar from "./navbar";
 

@@ -1,52 +1,49 @@
-.fondoHeader{
-    background-color:#ff6b00 ;
-}
-
-.contenedorCircular {
+.intro {
+    background-color: #ff6b00;
+    position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: #3c3b3b;
-    background: rgb(60, 59, 59);
-    background: linear-gradient(349deg, rgba(60, 59, 59, 1) 48%, rgba(255, 255, 255, 1) 100%);
-    border-bottom-left-radius: 260% 200%;
-    border-bottom-right-radius: 260% 200%;
-    position: relative; 
-    overflow: hidden; 
-}
 
-.titulo {
-    text-align: center;
-    color: #F2F2F2;
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 900;
-    font-size: 70px;
-    z-index: 1;
-}
-
-.color {
-    color: #ff6b00;
-}
-
-.contenedorInferior {
-    display: flex;
-    justify-content: center;
-    padding-top: clamp(100px, 45vh, 450px);
-}
-
-/* Estilos para los círculos */
-.circle {
-    position: absolute;
-    border-radius: 50%;
-    animation: rotate 5s linear infinite; /* Animación de rotación */
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
+    &__circle-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(349deg, rgba(60, 59, 59, 1) 48%, rgba(255, 255, 255, 1) 100%);
+        border-bottom-left-radius: 260% 200%;
+        border-bottom-right-radius: 260% 200%;
+        position: relative;
+        overflow: hidden;
     }
-    to {
-        transform: rotate(360deg);
+
+    &__animated-circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; // Capa intermedia
+    }
+
+    &__text-container {
+        display: flex;
+        justify-content: center;
+        padding-top: clamp(100px, 45vh, 450px);
+        position: relative;
+        z-index: 2; // Capa superior
+    }
+
+    &__title {
+        text-align: center;
+        color: #F2F2F2;
+        font-family: "Sofia Sans", sans-serif;
+        font-weight: 900;
+        font-size: 70px;
+        position: relative;
+        z-index: 2; // Capa superior
+    }
+
+    &__highlight {
+        color: #ff6b00;
     }
 }

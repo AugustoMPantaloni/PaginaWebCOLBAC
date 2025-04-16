@@ -6,11 +6,11 @@ import imgNuestroTrabajo from "../../assets/menuNav/imgNuestroTrabajo.webp";
 import imgPortfolio from "../../assets/menuNav/imgPortfolio.webp";
 import imgServicios from "../../assets/menuNav/imgServicios.webp";
 import imgSobreNosotros from "../../assets/menuNav/imgSobreNosotros.webp";
-import cruz from "../../assets/cruz.png";
+import cruz from "../../assets/menuNav/cruz.png";
 
-import LogoFacebook from "../../assets/logoFacebook.png"
-import LogoInstagram from "../../assets/logoInstagram.png"
-import LogoWsp from "../../assets/logoWsp.png"
+import LogoFacebook from "../../assets/iconosSociales/logoFacebook.png"
+import LogoInstagram from "../../assets/iconosSociales/logoInstagram.png"
+import LogoWsp from "../../assets/iconosSociales/logoWsp.png"
 
 const NavBar = ({ onClose }) => {
   const [isClosing, setIsClosing] = useState(false);

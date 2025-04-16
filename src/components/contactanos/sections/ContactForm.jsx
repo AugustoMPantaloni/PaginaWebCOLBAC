@@ -3,7 +3,8 @@ import emailjs from 'emailjs-com';
 import Header from "../../Layout/header";
 
 import iconoUbicacion from "../../../assets/contactanos/iconoUbicacion.png"
-import backgroundContact from "../../../assets/contactanos/backgroundContactanos.png"
+import AnimateCircles from "../../../assets/Animaciones/AnimateCircles";
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -67,12 +68,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div
-    style={{
-      backgroundImage: `url(${backgroundContact})`,
-      backgroundSize: 'cover',    
-      backgroundPosition: 'center', 
-  }}>
+    <div className='contact-page'>
+      <div className='circle-container'>
+        <AnimateCircles/>
+      </div>
       <Header/>
       <div className="contact-info">
         <div className="contact-info__location">
