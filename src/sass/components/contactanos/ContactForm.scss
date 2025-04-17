@@ -24,7 +24,7 @@ z-index: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 100px;
 
     &__title {
         font-family: "Sofia Sans", sans-serif;
@@ -84,6 +84,7 @@ z-index: 1;
     }
 
     &__input {
+        background-color: #ff6a0028;
         font-family: "Manrope", sans-serif;
         font-weight: 400;
         line-height: 1.4; 

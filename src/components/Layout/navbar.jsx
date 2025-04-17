@@ -14,6 +14,7 @@ import LogoWsp from "../../assets/iconosSociales/logoWsp.png"
 
 const NavBar = ({ onClose }) => {
   const [isClosing, setIsClosing] = useState(false);
+  
 
   const handleClose = () => {
     setIsClosing(true);
@@ -42,7 +43,8 @@ const NavBar = ({ onClose }) => {
               </Link>
           </div>
         </div>
-        <div>
+        <div className="">
+          <Link className="" to="/">INICIO</Link>
           <button onClick={handleClose} className="navbar__close-button">
             <img className="navbar__close-icon" src={cruz} />
           </button>
@@ -64,7 +66,7 @@ const NavBar = ({ onClose }) => {
             className="navbar__item navbar__item--serv"
             style={{ backgroundImage: `url(${imgServicios})` }}
           >
-            <Link className="navbar__link">Servicios</Link>
+            <Link onClick={handleClose} to="/#servicios" className="navbar__link">Servicios</Link>
           </div>
         </div>
         <div className="navbar__group--center">

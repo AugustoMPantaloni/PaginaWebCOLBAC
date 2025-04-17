@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, memo } from 'react';
+
 
 const getRandomSpeed = (base, variation) => (base + (Math.random() * variation * 2 - variation)) * (Math.random() > 0.5 ? 1 : -1);
 
@@ -17,90 +18,93 @@ const defaultCirclesConfig = [
   { id: 12, size: 160, color: "#dc0108", speedX: getRandomSpeed(3, 2), speedY: getRandomSpeed(1.1, 0.9) },
 ];
 
-const AnimatedCircles = ({ 
-  circles = defaultCirclesConfig,
-  containerStyle = {},
-  circleStyle = {}
-}) => {
-  const containerRef = useRef(null);
 
-
-  const baseStyles = {
-    container: {
-      position: 'relative',
-      width: '100%',
-      height: '100%',
-      overflow: 'hidden',
-      minHeight: '100vh',
-      ...containerStyle
-    },
-    circle: {
-      position: 'absolute',
-      borderRadius: '50%',
-      opacity: 0.7,
-      border: '2px dashed',
-      ...circleStyle
-    }
-  };
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    const circleElements = container.querySelectorAll('[data-circle]');
-
-    const moveCircles = () => {
-      circleElements.forEach((circle) => {
-        const rect = circle.getBoundingClientRect();
-        const containerRect = container.getBoundingClientRect();
-
-        let x = parseFloat(circle.style.left) || 0;
-        let y = parseFloat(circle.style.top) || 0;
-        const speedX = parseFloat(circle.dataset.speedX);
-        const speedY = parseFloat(circle.dataset.speedY);
-
-        x += speedX;
-        y += speedY;
-
-        if (x + rect.width > containerRect.width || x < 0) {
-          circle.dataset.speedX = -speedX;
-        }
-        if (y + rect.height > containerRect.height || y < 0) {
-          circle.dataset.speedY = -speedY;
-        }
-
-        circle.style.left = `${x}px`;
-        circle.style.top = `${y}px`;
-      });
-
-      requestAnimationFrame(moveCircles);
+const AnimatedCircles = memo(
+  ({ 
+    circles = defaultCirclesConfig,
+    containerStyle = {},
+    circleStyle = {}
+  }) => {
+    const containerRef = useRef(null);
+  
+  
+    const baseStyles = {
+      container: {
+        position: 'relative',
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden',
+        minHeight: '100vh',
+        ...containerStyle
+      },
+      circle: {
+        position: 'absolute',
+        borderRadius: '50%',
+        opacity: 0.7,
+        border: '2px dashed',
+        ...circleStyle
+      }
     };
-
-    const animationId = requestAnimationFrame(moveCircles);
-
-    return () => cancelAnimationFrame(animationId);
-  }, []);
-
-  return (
-    <div ref={containerRef} style={baseStyles.container}>
-      {circles.map((circle) => (
-        <div
-          key={circle.id}
-          data-circle="true"
-          style={{
-            ...baseStyles.circle,
-            width: `${circle.size}px`,
-            height: `${circle.size}px`,
-            borderColor: circle.color,
-            left: `${Math.random() * 100}%`, 
-            top: `${Math.random() * 100}%`,
-          }}
-          data-speed-x={circle.speedX}
-          data-speed-y={circle.speedY}
-        />
-      ))}
-    </div>
-  );
-};
+  
+    useEffect(() => {
+      const container = containerRef.current;
+      if (!container) return;
+  
+      const circleElements = container.querySelectorAll('[data-circle]');
+  
+      const moveCircles = () => {
+        circleElements.forEach((circle) => {
+          const rect = circle.getBoundingClientRect();
+          const containerRect = container.getBoundingClientRect();
+  
+          let x = parseFloat(circle.style.left) || 0;
+          let y = parseFloat(circle.style.top) || 0;
+          const speedX = parseFloat(circle.dataset.speedX);
+          const speedY = parseFloat(circle.dataset.speedY);
+  
+          x += speedX;
+          y += speedY;
+  
+          if (x + rect.width > containerRect.width || x < 0) {
+            circle.dataset.speedX = -speedX;
+          }
+          if (y + rect.height > containerRect.height || y < 0) {
+            circle.dataset.speedY = -speedY;
+          }
+  
+          circle.style.left = `${x}px`;
+          circle.style.top = `${y}px`;
+        });
+  
+        requestAnimationFrame(moveCircles);
+      };
+  
+      const animationId = requestAnimationFrame(moveCircles);
+  
+      return () => cancelAnimationFrame(animationId);
+    }, []);
+  
+    return (
+      <div ref={containerRef} style={baseStyles.container}>
+        {circles.map((circle) => (
+          <div
+            key={circle.id}
+            data-circle="true"
+            style={{
+              ...baseStyles.circle,
+              width: `${circle.size}px`,
+              height: `${circle.size}px`,
+              borderColor: circle.color,
+              left: `${Math.random() * 100}%`, 
+              top: `${Math.random() * 100}%`,
+            }}
+            data-speed-x={circle.speedX}
+            data-speed-y={circle.speedY}
+          />
+        ))}
+      </div>
+    );
+  }
+)
 
 export default AnimatedCircles;
