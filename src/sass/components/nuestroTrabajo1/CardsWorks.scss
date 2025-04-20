@@ -1,0 +1,60 @@
+.cards-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+
+&__container {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+    border: 6px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#2d2d2d, #2d2d2d),
+                    linear-gradient(120deg, #ff6b00, #ff9900, #ff6b00);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: cards-works-glow-border 4s infinite linear;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+}
+
+&__icon {
+    width: 200px;
+}
+
+&__title {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    color: #ff6b00;
+}
+
+&__description {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 22px;
+    width: 700px;
+    color: #f2f2f2;
+}
+}
+
+@keyframes cards-works-glow-border {
+0% {
+    background-image: linear-gradient(#2d2d2d, #2d2d2d),
+                    linear-gradient(120deg, #ff6b00, #ff9900, #ff6b00);
+}
+50% {
+    background-image: linear-gradient(#2d2d2d, #2d2d2d),
+                    linear-gradient(120deg, #ff9900, #ff6b00, #ff9900);
+}
+100% {
+    background-image: linear-gradient(#2d2d2d, #2d2d2d),
+                    linear-gradient(120deg, #ff6b00, #ff9900, #ff6b00);
+}
+}
