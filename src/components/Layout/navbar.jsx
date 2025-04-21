@@ -26,7 +26,7 @@ const NavBar = ({ onClose }) => {
   return (
     <div className={`navbar ${isClosing ? "navbar--closing" : ""}`} data-aos="zoom-in">
       <div className="navbar__social">
-        <div className="navbar__social-containerSocials">
+        <div className="navbar__social-container-socials">
           <div className="navbar__social-icon--instagram">
               <Link to="#">
                   <img src={LogoInstagram} alt="Instagram" />
@@ -43,8 +43,8 @@ const NavBar = ({ onClose }) => {
               </Link>
           </div>
         </div>
-        <div className="">
-          <Link className="" to="/">INICIO</Link>
+        <div className="navbar__social-container-buttons">
+          <Link className="navbar__menu-icon" to="/">INICIO</Link>
           <button onClick={handleClose} className="navbar__close-button">
             <img className="navbar__close-icon" src={cruz} />
           </button>
@@ -75,7 +75,7 @@ const NavBar = ({ onClose }) => {
             className="navbar__item navbar__item--trabajo"
             style={{ backgroundImage: `url(${imgNuestroTrabajo})` }}
           >
-            <Link to="/NuestroTrabajo" className="navbar__link">
+            <Link to="/NuestroProceso" className="navbar__link">
               Nuestro proceso
             </Link>
           </div>

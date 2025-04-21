@@ -40,7 +40,7 @@ const proceso = [
     },
     {
         icon: iconoMantenimiento,
-        title: "MANTENIMIENTO Y ACTUALIZACIONES",
+        title: "MANTENIMIENTO",
         description: `El lanzamiento no es el final, sino el comienzo. Seguimos monitoreando el software, aplicamos mejoras y agregamos nuevas funciones según las necesidades.
             Así, tu producto sigue evolucionando con el tiempo.`
     }

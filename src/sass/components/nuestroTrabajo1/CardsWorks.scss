@@ -1,60 +1,114 @@
 .cards-works {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-
 &__container {
-    width: 1000px;
-    height: 600px;
+    width: min(150vh, 90vw); 
+    height: min(650px, 80vh); 
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: clamp(20px, 3vh, 30px); 
     justify-content: center;
     align-items: center;
-    position: relative;
-    padding: 40px;
+    padding: clamp(30px, 4vw, 50px); 
     border: 6px solid transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(#2d2d2d, #2d2d2d),
-                    linear-gradient(120deg, #ff6b00, #ff9900, #ff6b00);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    animation: cards-works-glow-border 4s infinite linear;
-    box-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+    background: linear-gradient(#2d2d2d, #2d2d2d) padding-box,
+        linear-gradient(120deg, #ff6b00, #ff9900, #ff6b00) border-box;
+    animation: cards-works-glow-border 4s linear infinite;
+    box-shadow: 0 30px 50px rgba(255, 107, 0, 0.3);
+    transform: translateZ(-150px) scale(0.95);
+    opacity: 0.9;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease,
+        filter 0.4s ease, box-shadow 0.6s ease;
+    will-change: transform, opacity;
+    backdrop-filter: blur(2px); 
+    margin: 0 auto;
+
+    &:hover {
+        transform: translateZ(20px) scale(1.01);
+        box-shadow: 0 40px 70px rgba(255, 107, 0, 0.5);
+        opacity: 1;
+}
 }
 
 &__icon {
-    width: 200px;
+    width: clamp(120px, 15vw, 200px); 
+    height: auto;
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+        filter 0.3s ease;
+    filter: drop-shadow(0 5px 10px rgba(255, 107, 0, 0.3)) brightness(1.05);
+
+.swiper-slide-active & {
+    filter: drop-shadow(0 8px 15px rgba(255, 107, 0, 0.4)) brightness(1.1);
+}
 }
 
 &__title {
     font-family: "Sofia Sans", sans-serif;
     font-weight: 900;
-    font-size: 60px;
+    font-size: clamp(32px, 5vw, 60px); 
     color: #ff6b00;
+    text-align: center;
+    text-shadow: 0 2px 12px rgba(255, 107, 0, 0.25);
+    margin: 0.5em 0;
+    line-height: 1.1;
+    background: linear-gradient(to right, #ff6b00, #ff9900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.5s ease;
+
+.swiper-slide-active & {
+    text-shadow: 0 4px 15px rgba(255, 107, 0, 0.35);
+}
 }
 
 &__description {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
-    line-height: 1.4;
-    font-size: 22px;
-    width: 700px;
-    color: #f2f2f2;
-}
+    line-height: 1.7;
+    font-size: 25px;
+    width: 100%;
+    max-width: min(700px, 80vw);
+    color: rgba(242, 242, 242, 0.9);
+    text-align: center;
+    padding: 0 10px;
+    transition: all 0.5s ease;
+    }
 }
 
 @keyframes cards-works-glow-border {
-0% {
-    background-image: linear-gradient(#2d2d2d, #2d2d2d),
-                    linear-gradient(120deg, #ff6b00, #ff9900, #ff6b00);
+    0%,
+    100% {
+    border-image: linear-gradient(120deg, #ff6b00, #ff9900, #ff6b00) 1;
+    }
+    50% {
+    border-image: linear-gradient(120deg, #ff9900, #ff6b00, #ff9900) 1;
+    }
 }
-50% {
-    background-image: linear-gradient(#2d2d2d, #2d2d2d),
-                    linear-gradient(120deg, #ff9900, #ff6b00, #ff9900);
+
+@media (max-width: 992px) {
+.cards-works {
+    &__container {
+        width: 92vw;
+        height: auto;
+        min-height: 60vh;
+        padding: 25px;
 }
-100% {
-    background-image: linear-gradient(#2d2d2d, #2d2d2d),
-                    linear-gradient(120deg, #ff6b00, #ff9900, #ff6b00);
+
+    &__title {
+        margin: 0.3em 0;
+    }
+}
+}
+
+@media (max-width: 576px) {
+    .cards-works {
+    &__container {
+        min-height: 70vh;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+&__description {
+    line-height: 1.6;
+    }
 }
 }

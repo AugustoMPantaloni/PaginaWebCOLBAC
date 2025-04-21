@@ -7,6 +7,7 @@ const NuestroTrabajo1 = () =>{
         <>
             <Header/>
             <IntroWork/>
+            <Footer/>
         </>
     )
 }

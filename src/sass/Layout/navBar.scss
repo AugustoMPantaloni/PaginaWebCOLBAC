@@ -8,13 +8,14 @@
   &--closing {
     opacity: 0;
     transform: rotateY(30deg) scale(0.8);
+    transition: opacity 0.4s ease, transform 0.5s ease;
   }
-
 
   &__close-button {
     background: none;
     border: none;
     transition: transform 0.2s ease-in-out;
+    will-change: transform;
 
     &:hover {
       transform: scale(1.1);
@@ -26,11 +27,44 @@
     background: none;
   }
 
+  &__menu-icon {
+    all: unset;
+    position: relative;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #FF6B00;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    will-change: transform, color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      background-color: #FF6B00;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      color: #ffa34d;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
   &__nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-
   }
 
   &__group--left,
@@ -46,18 +80,47 @@
   }
 
   &__item {
+    filter: brightness(0.8);
     background-size: cover;
     display: flex;
     justify-content: center;
-    filter: brightness(0.4);
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
     transform-origin: center;
     width: 340px;
     border-radius: 3px;
+    will-change: transform, filter;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      border: 3px solid transparent;
+      border-radius: 5px;
+      z-index: 1;
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      pointer-events: none;
+      transform: scale(0.9);
+      opacity: 0;
+      box-shadow: 0 0 0 rgba(255, 107, 0, 0);
+    }
 
     &:hover {
-      filter: brightness(1);
+      filter: brightness(1.05);
       transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      
+      &::before {
+        border-color: #FF6B00;
+        box-shadow: 0 0 20px rgba(255, 107, 0, 0.8), 
+                    inset 0 0 15px rgba(255, 107, 0, 0.5);
+        transform: scale(1);
+        opacity: 1;
+      }
     }
 
     &--sobre {
@@ -86,22 +149,25 @@
     padding-top: 10px;
     text-decoration: none;
     font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    line-height: 1.4; 
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
     font-size: 25px;
-    transition: color 0.3s ease;
-  
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+
     &:hover {
       color: #ff6b00;
+      text-shadow: 0 0 10px rgba(255, 107, 0, 0.7);
     }
-  
+
     &--sobre,
     &--port,
     &--contacto {
       color: #ff6b00;
     }
-  
+
     &--serv,
     &--trabajo {
       color: #ff6b00;
@@ -114,43 +180,43 @@
     align-items: center;
     padding-bottom: 20px;
 
-  &-containerSocials{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
+    &-container-socials {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    &-container-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-self: center;
+      align-items: center;
+      gap: 100px;
+    }
 
     &-icon {
-      &--instagram img {
-        height: 35px;
-        transition: all 0.3s ease;
-
-        &:hover {
-          transform: scale(1.1);
-          filter: drop-shadow(0 0 5px #E1306C);
-        }
-      }
-
-      &--contact img {
-        height: 35px;
-        transition: all 0.3s ease;
-
-        &:hover {
-          transform: scale(1.1);
-          filter: brightness(1.2) drop-shadow(0 0 3px #25D366);
-        }
-      }
-
+      &--instagram img,
+      &--contact img,
       &--facebook img {
         height: 35px;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        will-change: transform, filter;
+      }
 
-        &:hover {
-          transform: scale(1.1);
-          filter: brightness(1.2) drop-shadow(0 0 3px #1877F2);
-        }
+      &--instagram img:hover {
+        transform: scale(1.1) translateY(-2px);
+        filter: drop-shadow(0 0 5px #E1306C);
+      }
+
+      &--contact img:hover {
+        transform: scale(1.1) translateY(-2px);
+        filter: brightness(1.2) drop-shadow(0 0 3px #25D366);
+      }
+
+      &--facebook img:hover {
+        transform: scale(1.1) translateY(-2px);
+        filter: brightness(1.2) drop-shadow(0 0 3px #1877F2);
       }
     }
   }
-
 }
