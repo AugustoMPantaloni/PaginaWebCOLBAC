@@ -1,22 +1,39 @@
-🌐 ColBac – Página Institucional
-Este es el repositorio oficial de la página institucional de ColBac, una empresa dedicada al desarrollo de software. El proyecto fue construido con React y SCSS, priorizando una arquitectura modular, estilos personalizados y sin uso de librerías externas para la interfaz, pero sí incorporando animaciones de diversas fuentes para enriquecer la experiencia visual.
+🧪 ColBac – Página Institucional
+¡Bienvenido al repositorio oficial de la página institucional de ColBac, una empresa dedicada al desarrollo de software! Este proyecto ha sido desarrollado con un enfoque en la arquitectura modular, estilos personalizados y una experiencia visual enriquecida.
 
-🛠️ Tecnologías utilizadas
-React – Biblioteca para construir interfaces de usuario dinámicas y componibles.
+🚀 Tecnologías Utilizadas
+📦 Framework principal
+React: Biblioteca para construir interfaces de usuario componibles.
 
-SCSS – Preprocesador CSS que permite mayor organización y reutilización de estilos.
+⚙️ Herramientas de desarrollo
+Vite: Bundler y entorno de desarrollo ultrarrápido.
 
-BEM (Block Element Modifier) – Convención de nombres para mantener los estilos escalables y legibles.
+🖼️ Librerías visuales
+Swiper.js: Carruseles modernos, táctiles y responsive.
 
-Animaciones personalizadas – Se utilizaron recursos externos como animaciones CSS o SVGs, integradas manualmente, sin depender de frameworks de animación.
+Three.js: Motor de gráficos 3D para visualizaciones con WebGL.
 
-🎯 Objetivo
-Desarrollar una página institucional profesional, moderna y responsive para representar la identidad digital de ColBac. El enfoque estuvo en lograr un producto 100% personalizado, evitando dependencias externas para mantener el control total sobre el diseño y comportamiento.
+🎨 Estilos y arquitectura CSS
+SCSS: Preprocesador CSS para una estructura de estilos más limpia y modular.
 
-📌 Estado del proyecto
-✅ Versión inicial incompleta.
-🔧 En proceso de mejoras estéticas y optimización de componentes.
-✨ Se planea seguir incorporando contenido y nuevas secciones.
+BEM: Convención de nombres en SCSS para mantener la escalabilidad.
 
-🤝 Contribuciones
-Este proyecto es de código abierto para fines de mejora continua. Si querés sugerir algo o colaborar, ¡abrí un issue o enviá un pull request!
+🧱 Estructura del Proyecto
+public/: Archivos públicos y recursos estáticos.
+
+src/: Código fuente principal de la aplicación.
+
+index.html: Punto de entrada de la aplicación.
+
+package.json: Dependencias y scripts del proyecto.
+
+vite.config.js: Configuración de Vite para el entorno de desarrollo.
+
+🎯 Características Destacadas
+Diseño Modular: Componentes reutilizables para facilitar el mantenimiento y escalabilidad.
+
+Estilos Personalizados: Uso de SCSS y BEM para una estructura de estilos clara y eficiente.
+
+Sin Dependencias Externas de UI: Desarrollo de la interfaz sin librerías externas, priorizando el control total sobre el diseño.
+
+Animaciones Integradas: Incorporación de animaciones con Three.js y Swiper.js para mejorar la interacción y experiencia del usuario.
