@@ -1,102 +1,54 @@
 import { Link } from "react-router-dom";
 
 const BrandMessage = () => {
-return (
-    <div className="estilosBody3">
-        <div className="contenedorComun3">
-            <div className="contenedorRN1">
-                <div
-                    className="rectanguloNegro1"
-                    data-aos="flip-left"
-                    data-aos-duration="900"
-                    data-aos-delay="100"
-                    data-aos-easing="ease-in-out"
-                >
-                    <p className="estilosTexto3">
-                    TU PRESENCIA DIGITAL NECESITA <br/>
-                    <span className="colorFuncionalidad">RENDIMIENTO</span>,
-                    <span className="colorEstetica"> DISEÑO </span> Y
-                    <span className="colorExperiencia"> ESTRATEGIA.<br/> </span> 
-                    NOSOTROS LO HACEMOS REALIDAD.
+    return (
+        <div className="brand-message">
+            <h2 className="brand-message__title" data-aos="fade-down">UN NUEVO FUTURO, JUNTOS.</h2>
+
+            <div className="brand-message__card brand-message__card--one">
+                <div className="brand-message__content" data-aos="fade-right">
+                    <div className="brand-message__number" data-aos="fade-down"></div>
+                    <p className="brand-message__description">
+                        SI TU NEGOCIO NO ESTÁ EN INTERNET, TU NEGOCIO NO EXISTE.
+                        <br />
+                        EL MUNDO CAMBIÓ, Y NOSOTROS TE AYUDAMOS A CAMBIAR CON ÉL.
+                    </p>
+                    <div className="brand-message__divider"></div>
+                    <p className="brand-message__description">
+                        TENÉS UNA GRAN IDEA. NOSOTROS LA LLEVAMOS AL MUNDO DIGITAL.
+                        <br />
+                        PORQUE HOY, SI TU NEGOCIO NO ESTÁ EN INTERNET...
+                        <br /> BUENO, YA SABÉS.
                     </p>
                 </div>
-            </div>
-            <div className="contenedorCN1">
-            <div className="cuadradoNegro1">
-                <div className="cuadradoNegro1">
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
-                <div className="circulo-punteado"></div>
+                <div className="brand-message__cta-container" data-aos="flip-left">
+                    <Link className="brand-message__cta-button" to="/Contactanos">
+                        ¡HABLEMOS!
+                    </Link>
                 </div>
             </div>
-            </div>
-            <div className="contenedorRO1">
-                <div className="rectanguloOrang">
-                    <div className="estilosContactanos">
-                        <Link className="estilosTextoContactanos">
-                            ¡CONTACTANOS Y CONOCENOS!
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="contenedorComun4">
-            <div className="contenedorRN2">
-                <div 
-                    className="rectanguloNegro2"
-                    data-aos="flip-right"
-                    data-aos-duration="900"
-                    data-aos-delay="100"
-                    data-aos-easing="ease-in-out"
-                >
-                    <p className="estilosTexto4">
-                        SI TE 
-                        <span className="colorConstruyamos"> APASIONA </span>
-                        LA TECNOLOGÍA Y <br /> EL DISEÑO, <br />
-                        TE ESTAMOS BUSCANDO. <br />
-                        <span className="colorSumate"> SUMATE </span> 
-                        A NUESTRO 
-                        <span className="colorEquipo"> EQUIPO </span>
-                    </p>
-                </div>
-            </div>
-            <div className="contenedorCN2">
-            <div className="cuadradoNegro2">
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-                <div className="circulo-punteado2"></div>
-            </div>
-            </div>
-            <div className="contenedorRR1">
-            <div className="rectanguloRojo">
-                <div className="estilosTrabaja">
-                <Link className="estilosTextoTrabaja">
-                    ¡TE ESTAMOS ESPERANDO!
+
+            <div className="brand-message__card brand-message__card--two">
+                <div className="brand-message__cta-container" data-aos="flip-left">
+                <Link className="brand-message__cta-button" to="/Contactanos">
+                    ¡SUMATE!
                 </Link>
                 </div>
-            </div>
+                <div className="brand-message__content" data-aos="fade-left">
+                <div className="brand-message__number" data-aos="fade-down"></div>
+                <p className="brand-message__description">
+                    SI TE APASIONA LA TECNOLOGÍA Y EL DISEÑO, TE ESTAMOS BUSCANDO.
+                    SUMATE A NUESTRO EQUIPO.
+                </p>
+                <div className="brand-message__divider"></div>
+                <p className="brand-message__description">
+                    UNITE A UNA EMPRESA QUE VALORA EL TALENTO, EL CRECIMIENTO Y EL TRABAJO
+                    EN CONJUNTO. JUNTOS LOGRAMOS MÁS.
+                </p>
+                </div>
             </div>
         </div>
-    </div>
-);
+    );
 };
 
 export default BrandMessage;

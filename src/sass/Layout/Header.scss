@@ -10,6 +10,7 @@
   padding: 10px 15px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
+
   &.scrolled {
     background-color: rgba(244, 227, 215, 0.85);
   }
@@ -26,6 +27,7 @@
   }
 
   &__brand {
+    color: #2D2D2D;
     font-family: "Baumans", system-ui;
     font-weight: 400;
     font-size: 30px;
@@ -33,6 +35,14 @@
     margin-left: 5px;
     margin-bottom: 10px;
     z-index: 1;
+  }
+
+  &__extra{
+    color: #2D2D2D;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-left: 15px;
   }
 
   &__menu-button {

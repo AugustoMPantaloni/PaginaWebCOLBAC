@@ -33,7 +33,8 @@ const Header = ({ style }) => {
         <Link to="/">
           <img className="header__logo" src={logo1} alt="Logo" />
         </Link>
-        <p className="header__brand">&lt;colbac&gt;</p>
+        <p className="header__brand">&lt;colbac&gt; </p>
+        <p className="header__extra"> Argentina + El Mundo </p>
       </div>
 
       <button onClick={mostrarMenu} className="header__menu-button">

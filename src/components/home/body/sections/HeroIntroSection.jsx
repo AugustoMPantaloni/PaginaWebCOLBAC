@@ -1,33 +1,38 @@
-import abstrac from "../../../../assets/Abstract.png";
+import React from "react";
+import logo from "../../../../assets/logos/logo1.png";
+import { Link } from "react-router-dom";
 
 const HeroIntroSection = () => {
 return (
-    <div className="hero-intro">
+    <section className="hero-intro">
         <div className="hero-intro__content">
-            <div className="hero-intro__highlight"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="100"
-                data-aos-easing="ease-in-out"
-            />
-            <h2 className="hero-intro__text"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-delay="100"
-                data-aos-easing="ease-in-out"
-                
-            >
-            NO HACEMOS MAGIA. HACEMOS <span className="hero-intro__word">SOFTWARE</span>.<br/>
-            Y LO HACEMOS <span span className="hero-intro__word">BIEN</span>:<br/> ENTENDEMOS TU IDEA,
-            LA CONVERTIMOS EN ESTRATEGIA Y EN UNA HERRAMIENTA QUE IMPACTA Y CRECE.
-            </h2>
+            <img className="hero-intro__logo" src={logo} alt="Logo" data-aos="fade-down"/>
+
+            <div data-aos="fade-up">            
+                <div className="hero-intro__text-container" data-aos="fade-up">
+                    <p className="hero-intro__text hero-intro__text--primary">
+                    NO HACEMOS MAGIA. HACEMOS SOFTWARE
+                    </p>
+                    <p className="hero-intro__text hero-intro__text--secondary">
+                    Y LO HACEMOS BIEN.
+                    </p>
+                    <p className="hero-intro__text hero-intro__text--tertiary">
+                    ENTENDEMOS TU IDEA, LA CONVERTIMOS EN ESTRATEGIA Y EN UNA
+                    HERRAMIENTA QUE IMPACTA Y CRECE.
+                    </p>
+                </div>
+
+                <div className="hero-intro__cta-container" data-aos="fade-up">
+                    <p className="hero-intro__cta-text">
+                    ¿Curioso por saber cómo lo hacemos? ¡Ven a ver!
+                    </p>
+                    <Link to="/NuestroProceso" className="hero-intro__cta-button">
+                    Click acá
+                    </Link>
+                </div>
+            </div>
         </div>
-        <img
-        className="hero-intro__image"
-        src={abstrac}
-        alt="Decorativo abstracto"
-        />
-    </div>
+    </section>
 );
 };
 
