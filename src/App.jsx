@@ -5,12 +5,14 @@ import 'aos/dist/aos.css';
 
 // Componentes
 import NavBar from './components/Layout/navbar';
+import PantallaCarga from './components/Layout/pantallaCarga';
+import './sass/main.scss';
+
 import Home from './components/home/Home';
 import SobreNosotros from './components/SobreNosotros/SobreNosotros';
 import Contactanos from './components/contactanos/contactanos';
-import PantallaCarga from './components/Layout/pantallaCarga';
 import NuestroTrabajo1 from './components/nuestroTrabajo1/nuestroTrabajo1';
-import './sass/main.scss';
+import Servicios from './components/servicios/Servicios';
 
 function AOSWrapper() {
   const location = useLocation();
@@ -26,10 +28,11 @@ function AOSWrapper() {
   return (
     <Routes>
       <Route path='/' element={<Home/>} />
-      <Route path='/navBar' element={<NavBar/>}/>
+      <Route path='/NavBar' element={<NavBar/>}/>
       <Route path='/NuestroProceso' element={<NuestroTrabajo1/>} />
       <Route path='/SobreNosotros' element={<SobreNosotros/>} />
       <Route path="/Contactanos" element={<Contactanos/>}/>
+      <Route path="/Servicios" element={<Servicios/>}/>
     </Routes>
   );
 }

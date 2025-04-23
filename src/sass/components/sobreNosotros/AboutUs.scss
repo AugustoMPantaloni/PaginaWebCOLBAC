@@ -6,6 +6,7 @@
   background-color: #2d2d2d;
 
   &__background-wrapper {
+    filter: brightness(0.9);
     position: absolute;
     top: 0;
     left: 0;

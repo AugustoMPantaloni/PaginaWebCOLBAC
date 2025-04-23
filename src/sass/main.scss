@@ -17,10 +17,11 @@
 @use "./components/sobreNosotros/VisionMission.scss";
 @use "./components/sobreNosotros/AboutProcess.scss";
 @use "./components/sobreNosotros/CardsTeam.scss";
-//NuestroTrabajo
-@use "./components/nuestroTrabajo/ProcessHeader.scss";
-@use "./components/nuestroTrabajo/ourJob.scss";
+//NuestroProceso
 @use "./components/nuestroTrabajo1/CardsWorks.scss";
 @use "./components/nuestroTrabajo1/IntroWork.scss";
 //Contactanos
-@use "./components/contactanos/ContactForm.scss"
+@use "./components/contactanos/ContactForm.scss";
+//Servicios
+@use "./components/servicios/IntroServicios.scss";
+@use "./components/servicios/CardsServicios.scss";

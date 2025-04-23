@@ -1,0 +1,119 @@
+.service-card {
+    position: relative;
+    padding: 20px;
+    width: 700px;
+    height: 400px;
+    border-radius: 16px;
+    background-color: #2D2D2D;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+}
+
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: 8px solid transparent;
+    background: linear-gradient(120deg, #FF6B00, #FFA500, #FF6B00) border-box;
+    mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out; 
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    animation: borderReveal 1.2s ease forwards;
+}
+
+
+.service-card:hover::before {
+    opacity: 1;
+
+}
+
+
+@keyframes borderReveal {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    51% {
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+}
+
+
+.service-card * {
+    position: relative;
+    z-index: 2;
+}
+
+
+.service-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.service-icon {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease;
+}
+
+.service-video {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+
+.service-card:hover .service-video {
+    transform: scale(1.5);
+}
+
+
+.service-title {
+    text-transform: uppercase;
+    color: #FF6B00;
+    font-size: 25px;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+
+.service-description {
+    color: white;
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}

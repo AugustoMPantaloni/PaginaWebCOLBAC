@@ -89,7 +89,7 @@ const NavBar = ({ onClose }) => {
             className="navbar__item navbar__item--serv"
             style={{ backgroundImage: `url(${imgServicios})` }}
             >
-                <Link onClick={handleClose} to="/#servicios" className="navbar__link">Servicios</Link>
+                <Link onClick={handleClose} to="/Servicios" className="navbar__link">Servicios</Link>
           </div>
         </div>
       </nav>

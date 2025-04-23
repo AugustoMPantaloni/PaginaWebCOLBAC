@@ -1,6 +1,6 @@
 //Dependencias directas
-import React, { useEffect, useState, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 //Dependencias externas (librerias, etc.)
 
 //Componentes
@@ -8,31 +8,17 @@ import Cards from "../../cards/cards";
 import CardsData from "../../../../data/servicios";
 
 const ServicesSection = () => {
-  const services = useRef(); //Solucionar esto
-  const location = useLocation() //Solucionar esto
-
-  const [redirect, setRedirect] = useState(location.hash); //Solucionar esto
   const [cards, setCards] = useState([]); 
   const [activeVideo, setActiveVideo] = useState(null);
   const [isHoveringCard, setIsHoveringCard] = useState(false);
 
 
-  useEffect(()=>{ //Averiguar para que sirve esto... //Solucionar esto
-    setRedirect(location.hash)
-    if(location.hash === "#servicios"){
-      const {current} = services;
-      if(current){
-        current.scrollIntoView({behavior: "smooth" })
-      }
-    }
-    setRedirect(null);
-  },[redirect])
 
   useEffect(() => {
     setCards(CardsData);
   }, []);
   return (
-    <section className="services-section" data-aos="fade-up" ref={services}>
+    <section className="services-section" data-aos="fade-up">
       <video
         className={`services-section__background-video ${
           activeVideo ? "visible" : ""
@@ -82,6 +68,10 @@ const ServicesSection = () => {
             }}
           />
         ))}
+      </div>
+
+      <div className="services-section__container-cta">
+        <Link to="Servicios" className="services-section__cta"> Más sobre lo que hacemos</Link>
       </div>
     </section>
   );
