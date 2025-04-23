@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo1 from "../../assets/logos/logo1.png";
+import logoColor from "../../assets/logos/logoColor.png";
 import iconoNavBar from "../../assets/menuNav/menuNav.png";
 import React, { useState, useEffect } from "react";
 import NavBar from "./navbar";
@@ -31,9 +31,9 @@ const Header = ({ style }) => {
     >
       <div className="header__logo-container">
         <Link to="/">
-          <img className="header__logo" src={logo1} alt="Logo" />
+          <img className="header__logo" src={logoColor} alt="Logo" />
         </Link>
-        <p className="header__brand">&lt;colbac&gt; </p>
+        <p className="header__brand">&lt;Colbac&gt; </p>
         <p className="header__extra"> Argentina + El Mundo </p>
       </div>
 

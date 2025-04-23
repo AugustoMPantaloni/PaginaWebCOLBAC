@@ -1,8 +1,9 @@
+import franco from "../assets/photosTeam/franco.jpeg"
 
 
 const dataTeam = [
     {
-        photo: "",
+        photo: franco,
         name:"PLOMER FRANCO NICOLÁS",
         role:"Product Manager & Estratega Técnico de Proyectos",
         bio:`Desde temprana edad, Franco supo que su camino estaba ligado a la tecnología. Tuvo la suerte de formarse en un colegio técnico donde dio sus primeros pasos en la programación,

@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../../../../assets/logos/logo1.png";
+import logoClaro from "../../../../assets/logos/logoClaro.png";
 import { Link } from "react-router-dom";
 
 const HeroIntroSection = () => {
 return (
     <section className="hero-intro">
         <div className="hero-intro__content">
-            <img className="hero-intro__logo" src={logo} alt="Logo" data-aos="fade-down"/>
+            <img className="hero-intro__logo" src={logoClaro} alt="Logo" data-aos="fade-down"/>
 
             <div data-aos="fade-up">            
                 <div className="hero-intro__text-container" data-aos="fade-up">

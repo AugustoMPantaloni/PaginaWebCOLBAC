@@ -19,7 +19,7 @@ setCurrentIndex((prevIndex) =>
 const currentMember = dataTeam[currentIndex];
 
 return (
-    <div className="about-process" data-aos="fade-up">
+    <div className="about-process">
         <div className="about-process__header">
             <h2 className="about-process__main-text">
                 Una empresa joven con la solidez de la experiencia,<br />

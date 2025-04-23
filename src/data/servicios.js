@@ -1,6 +1,11 @@
 import iconoUx from "../assets/cards/iconos/iconoUx.png";
 import iconoSoftware from "../assets/cards/iconos/iconoSoftware.png";
 import iconoWeb from "../assets/cards/iconos/iconoWeb.png";
+import iconoConsultora from "../assets/cards/iconos/iconoConsultora.png"
+import iconoApp from "../assets/cards/iconos/iconoApp.png"
+import iconoApi from "../assets/cards/iconos/iconoApi.png"
+import iconoTest from "../assets/cards/iconos/iconoTest.png"
+import iconoSoporte from "../assets/cards/iconos/iconoSoporte.png"
 
 import videoSoftware from"../assets/cards/videos/videoSoftware.mp4";
 import videoDiseño from"../assets/cards/videos/videoDiseño.mp4";
@@ -46,7 +51,7 @@ const data = [
     title: "Consultoría <br/>TI",
     description: 
     "🧠 <strong>Asesoría estratégica</strong><br/>Evaluamos tu infraestructura tecnológica y diseñamos soluciones personalizadas para mejorar tus procesos y optimizar el rendimiento de tus sistemas. Nuestro objetivo es ayudarte a tomar decisiones informadas y lograr una transformación digital que impulse la eficiencia en tu negocio.",
-    icono: iconoWeb,
+    icono: iconoConsultora,
     backgroundColor: "#1F1F1F",
     borderColor: "#A78BFA",
     shadowColor: "#A78BFA",
@@ -56,7 +61,7 @@ const data = [
     title: "Desarrollo <br/>de Apps",
     description: 
     "📱 <strong>Aplicaciones móviles</strong><br/>Desarrollamos aplicaciones móviles escalables con interfaces fluidas y paneles de administración fáciles de usar. Nos aseguramos de que cada app sea optimizada para la plataforma, ofreciendo una experiencia de usuario excepcional tanto en Android como en otras plataformas.",
-    icono: iconoWeb,
+    icono: iconoApp,
     backgroundColor: "#1F1F1F",
     borderColor: "#0DB39E",
     shadowColor: "#0DB39E",
@@ -66,7 +71,7 @@ const data = [
     title: "Testeo y <br/>Calidad",
     description: 
     "🧪 <strong>Verificación constante</strong><br/>Realizamos pruebas exhaustivas de software, auditamos su rendimiento y corregimos errores para garantizar que la experiencia del usuario sea fluida y sin fallos. Nuestro enfoque en calidad asegura que tu software funcione correctamente en todo momento, sin importar el volumen de usuarios.",
-    icono: iconoWeb,
+    icono: iconoTest,
     backgroundColor: "#1F1F1F",
     borderColor: "#F2545B",
     shadowColor: "#F2545B",
@@ -76,7 +81,7 @@ const data = [
     title: "Soporte y <br/>escalabilidad",
     description: 
     "🛠️ <strong>Siempre funcionando</strong><br/>Ofrecemos mantenimiento continuo y monitoreo proactivo para asegurarnos de que tu sistema esté siempre operativo. Además, diseñamos soluciones para escalar tu infraestructura sin perder estabilidad, permitiendo que tu negocio crezca de manera constante.",
-    icono: iconoWeb,
+    icono: iconoSoporte,
     backgroundColor: "#1F1F1F",
     borderColor: "#F9A826",
     shadowColor: "#F9A826",
@@ -86,7 +91,7 @@ const data = [
     title: "Despliegue <br/>de APIs",
     description: 
     "🔗 <strong>Integraciones eficientes</strong><br/>Nos especializamos en crear e integrar APIs que conectan servicios y plataformas de manera eficiente, optimizando los procesos de automatización y mejorando la escalabilidad de las funcionalidades de tu negocio. Ayudamos a agilizar la comunicación entre sistemas y a mejorar la interoperabilidad.",
-    icono: iconoWeb,
+    icono: iconoApi,
     backgroundColor: "#1F1F1F",
     borderColor: "#57CC99",
     shadowColor: "#57CC99",

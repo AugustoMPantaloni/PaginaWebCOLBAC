@@ -1,4 +1,4 @@
-import logo from "../../assets/logos/logo2.png";
+import logoClaro from "../../assets/logos/logoClaro.png";
 import logoInstagram from "../../assets/iconosSociales/logoInstagram.png";
 import logoWsp from "../../assets/iconosSociales/logoWsp.png";
 import logoFacebook from "../../assets/iconosSociales/logoFacebook.png"
@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footer__logo">
-                <img src={logo} alt="Logo" />
+                <img src={logoClaro} alt="Logo" />
             </div>
             
             <div className="footer__text">

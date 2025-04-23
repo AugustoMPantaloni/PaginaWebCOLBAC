@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import CardsWorks from "../cards/CardsWork";
 import dataProceso from "../../../data/proceso";
 
-import logo from "../../../assets/logos/logo1.png"
+import logoColor from "../../../assets/logos/logoColor.png"
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -77,7 +77,7 @@ const IntroWork = () => {
                 </Swiper>
             </div>
             <div className='intro-work__nosotros-container'>
-                <img className='intro-work__nosotros-logo' src={logo}/>
+                <img className='intro-work__nosotros-logo' src={logoColor}/>
                 <h2 className='intro-work__nosotros-text'>Descubrí quiénes somos y por qué hacemos lo que hacemos.</h2>
                 <Link to="/SobreNosotros" className='intro-work__nosotros-link'>Click aca</Link>
             </div>

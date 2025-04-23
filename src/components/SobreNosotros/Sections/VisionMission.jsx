@@ -29,7 +29,7 @@ const VisionMission = () => {
                 <h2 className="about-section__mission-heading">Nuestra mision</h2>
                 <p className="about-section__mission-text"> 
                 Facilitar el crecimiento de emprendedores, empresas y marcas a través de soluciones de software eficientes, escalables y alineadas con sus objetivos.
-                Acompañamos a nuestros clientes en el proceso de fortalecer su presencia digital.
+                Acompañamos a nuestros clientes en todo el proceso.
                 </p>
             </div>
         </div>

@@ -8,8 +8,8 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
-    
-        &::after {
+
+    &::after {
         content: "";
         background-image: url("/backgroundHome.png");
         background-size: cover;
@@ -21,9 +21,11 @@
         height: 100%;
         pointer-events: none;
         z-index: 0;
-        }
-    
-        &__title {
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    &__title {
         font-family: "Sofia Sans", sans-serif;
         font-weight: 900;
         color: #2D2D2D;
@@ -32,9 +34,9 @@
         margin-bottom: 60px;
         position: relative;
         z-index: 2;
-        }
-    
-        &__card {
+    }
+
+    &__card {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -55,8 +57,8 @@
             margin-left: auto;
         }
     }
-    
-        &__content {
+
+    &__content {
         position: relative;
         width: 820px;
         height: 300px;
@@ -68,24 +70,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         &:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
-        }
-    
-        
-        .brand-message__card--one &__content {
+    }
+
+    .brand-message__card--one &__content {
         border-left: 8px solid #F2F2F2;
         border-radius: 0 8px 8px 0;
-        }
-        .brand-message__card--two &__content {
+    }
+    .brand-message__card--two &__content {
         border-right: 8px solid #F2F2F2;
         border-radius: 8px 0 0 8px;
-        }
-    
-        &__number {
+    }
+
+    &__number {
         position: absolute;
         top: -20px;
         background: #F2F2F2;
@@ -99,90 +100,83 @@
         font-weight: bold;
         font-family: "Manrope", sans-serif;
         font-size: 18px;
-        }
-        
-        .brand-message__card--one &__number {
+    }
+
+    .brand-message__card--one &__number {
         left: -25px;
-        }
-        .brand-message__card--two &__number {
+    }
+    .brand-message__card--two &__number {
         right: -25px;
-        }
-    
-        &__description {
+    }
+
+    &__description {
         color: #e0e0e0;
         font-family: "Sofia Sans", sans-serif;
         font-weight: 700;
         line-height: 1.4;
         font-size: 22px;
-        }
-    
-        &__divider {
+    }
+
+    &__divider {
         width: 100%;
         height: 1px;
         border-top: 2px dashed #FF6B00;
         margin: 2rem 0;
-        }
-    
-        &__cta-container {
-        position: relative;
-        z-index: 2;
-        }
-    
-        &__cta-button {
-            all: unset;
-            font-family: "Manrope", sans-serif;
-            font-weight: 700;
-            line-height: 1.4;
-            background: linear-gradient(135deg, #ffffff, #f7f7f7); 
-            color: #2D2D2D; 
-            padding: 12px 30px;
-            font-family: "Sofia Sans", sans-serif;
-            font-weight: 700;
-            font-size: 1.1rem;
-            border-radius: 50px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
-            letter-spacing: 0.5px;
-        
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent); 
-                transition: 0.5s;
-            }
-        
-            &:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-                
-                &::before {
-                    left: 100%;
-                }
-            }
-        
-            &:active {
-                transform: translateY(0);
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
-            }
-        
-            &:focus {
-                outline: 2px solid #ffbb00; 
-                outline-offset: 3px;
-            }
     }
+
+    &__cta-container {
+        z-index: 2;
+        background: linear-gradient(135deg, #ffffff, #f7f7f7); 
+        padding: 12px 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent); 
+            transition: 0.5s;
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+            &::before {
+                left: 100%;
+            }
+        }
+
+        &:active {
+            transform: translateY(0);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+        }
+
+        &:focus {
+            outline: 2px solid #ffbb00; 
+            outline-offset: 3px;
+        }
+    }
+
+    &__cta-button{
+        all: unset;
+        font-family: "Sofia Sans", sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #2D2D2D; 
+        letter-spacing: 0.5px;
+    }
+
+    
 }
-
-
-
-
-
 
 
 
