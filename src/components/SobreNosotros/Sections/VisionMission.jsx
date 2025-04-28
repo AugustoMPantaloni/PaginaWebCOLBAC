@@ -1,36 +1,33 @@
 const VisionMission = () => {
     return (
-        <div className="about-section">
-            <div className="about-section__orange-position" data-aos="fade-up">
-                <div 
-                className="about-section__orange-bar"
-                data-aos="fade-right"
-                data-aos-duration="1200"
-                data-aos-easing="ease-in-out"
-                /> 
+        <div className="vision-mission">
+            <div className="vision-mission__card vision-mission__card--one">
+                <div className="vision-mission__content" data-aos="fade-right">
+                    <div className="vision-mission__number" data-aos="fade-down"></div>
+                        <p className="vision-mission__title">
+                            LO QUE SOÑAMOS
+                        </p>
+                    <div className="vision-mission__divider"></div>
+                    <p className="vision-mission__text">
+                    Soñamos un futuro donde la tecnología esté presente en cada proceso de tu empresa,
+                    facilitando el trabajo diario, optimizando el tiempo y abriendo nuevas oportunidades.
+                    Creemos en un mundo donde las herramientas digitales no son un lujo, sino una extensión natural de tu crecimiento.
+                    </p>
+                </div>
             </div>
-            <div className="about-section__vision-box" data-aos="fade-up">
-                <h2 className="about-section__vision-heading">Nuestra vision</h2>
-                <p className="about-section__vision-text">
-                Impulsamos la evolución digital creando soluciones de software que marquen la diferencia.
-                No buscamos ser uno más: redefinimos los estándares de calidad, innovación y
-                estilo en cada proyecto que llevamos adelante.
-                </p>
-            </div>
-            <div className="about-section__teal-position" data-aos="fade-up">
-                <div
-                className="about-section__teal-bar"
-                data-aos="fade-left"
-                data-aos-duration="1200"
-                data-aos-easing="ease-in-out"
-                /> 
-            </div>
-            <div className="about-section__mission-box" data-aos="fade-up">
-                <h2 className="about-section__mission-heading">Nuestra mision</h2>
-                <p className="about-section__mission-text"> 
-                Facilitar el crecimiento de emprendedores, empresas y marcas a través de soluciones de software eficientes, escalables y alineadas con sus objetivos.
-                Acompañamos a nuestros clientes en todo el proceso.
-                </p>
+
+            <div className="vision-mission__card vision-mission__card--two">
+                <div className="vision-mission__content" data-aos="fade-left">
+                    <div className="vision-mission__number" data-aos="fade-down"></div>
+                    <p className="vision-mission__title">
+                        LO QUE HACEMOS REALIDAD
+                    </p>
+                    <div className="vision-mission__divider"></div>
+                    <p className="vision-mission__text">
+                        Crecemos junto a vos. Creamos herramientas digitales pensadas para impulsarte, acompañarte en tu viaje, y ayudarte a convertir cada una de tus metas en logros concretos.
+                        Nuestra misión es acompañarte en cada paso, brindándote el respaldo y la innovación que necesitás para alcanzar el éxito.
+                    </p>
+                </div>
             </div>
         </div>
     )

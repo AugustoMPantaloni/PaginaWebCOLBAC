@@ -19,7 +19,7 @@ function AOSWrapper() {
 
   useEffect(() => {
     AOS.init({
-      duration: 900,
+      duration: 800,
       once: true,
     });
     AOS.refresh();

@@ -11,7 +11,7 @@ Vite: Bundler y entorno de desarrollo ultrarrápido.
 🖼️ Librerías visuales
 Swiper.js: Carruseles modernos, táctiles y responsive.
 
-Three.js: Motor de gráficos 3D para visualizaciones con WebGL.
+Animaciones AOS.
 
 🎨 Estilos y arquitectura CSS
 SCSS: Preprocesador CSS para una estructura de estilos más limpia y modular.
@@ -19,11 +19,9 @@ SCSS: Preprocesador CSS para una estructura de estilos más limpia y modular.
 BEM: Convención de nombres en SCSS para mantener la escalabilidad.
 
 🧱 Estructura del Proyecto
-public/: Archivos públicos y recursos estáticos.
+src/: Código fuente principal de la aplicación y recursos estáticos.
 
-src/: Código fuente principal de la aplicación.
-
-index.html: Punto de entrada de la aplicación.
+App.jsx: Punto de entrada de la aplicación.
 
 package.json: Dependencias y scripts del proyecto.
 
@@ -36,4 +34,4 @@ Estilos Personalizados: Uso de SCSS y BEM para una estructura de estilos clara y
 
 Sin Dependencias Externas de UI: Desarrollo de la interfaz sin librerías externas, priorizando el control total sobre el diseño.
 
-Animaciones Integradas: Incorporación de animaciones con Three.js y Swiper.js para mejorar la interacción y experiencia del usuario.
+Animaciones Integradas: Incorporación de animaciones con Swiper.js y AOS para mejorar la interacción y experiencia del usuario.
