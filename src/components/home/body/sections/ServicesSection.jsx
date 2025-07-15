@@ -70,9 +70,6 @@ const ServicesSection = () => {
         ))}
       </div>
 
-      <div className="services-section__container-cta">
-        <Link to="Servicios" className="services-section__cta"> Más sobre lo que hacemos</Link>
-      </div>
     </section>
   );
 };

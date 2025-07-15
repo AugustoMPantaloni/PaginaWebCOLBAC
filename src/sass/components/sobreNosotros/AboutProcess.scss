@@ -1,11 +1,11 @@
 .about-process {
     width: 100%;
-    overflow: hidden;
     background-image: url("/public/backgroundHome.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
 
 &__header {
     width: 100%;
@@ -19,7 +19,7 @@
 &__main-text {
     font-family: "Sofia Sans", sans-serif;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 4vw;
     line-height: 100%;
     letter-spacing: 0%;
     color: #f2f2f2;
@@ -32,7 +32,7 @@
     flex-direction: column;
     gap: 30px;
     padding-top: 50px;
-    padding-left: 80px;
+    padding-left: 30px;
     background-color: rgba(
         255,
         255,

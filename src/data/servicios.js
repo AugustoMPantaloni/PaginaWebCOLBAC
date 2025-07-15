@@ -18,9 +18,9 @@ import videoApi from"../assets/cards/videos/videoApi.mp4";
 
 const data = [
 {
-    title: "Desarrollo <br/>de software",
+    title: "Desarrollo de software",
     description: 
-    "💻 <strong>Soluciones robustas</strong><br/>Desarrollamos software a medida, con una arquitectura sólida y optimizada para alto rendimiento. Nos enfocamos en construir aplicaciones escalables y fáciles de mantener, garantizando que tu solución pueda crecer junto con tu negocio, adaptándose a los cambios y necesidades del mercado.",
+    "💻 Soluciones robustas Desarrollamos software a medida, con una arquitectura sólida y optimizada para alto rendimiento. Nos enfocamos en construir aplicaciones escalables y fáciles de mantener, garantizando que tu solución pueda crecer junto con tu negocio, adaptándose a los cambios y necesidades del mercado.",
     icono: iconoSoftware,
     backgroundColor: "#1F1F1F",
     borderColor: "#5B8DEF",
@@ -28,9 +28,9 @@ const data = [
     video: videoSoftware,
 },
 {
-    title: "Diseño <br/>UX/UI",
+    title: "Diseño UX/UI",
     description: 
-    "🎨 <strong>Experiencias claras</strong><br/>Nos especializamos en crear interfaces centradas en el usuario, garantizando una experiencia intuitiva y atractiva. Nuestras soluciones están diseñadas para adaptarse a cualquier dispositivo y ofrecer una navegación fluida, mejorando la satisfacción y la retención del usuario.",
+    "🎨 Experiencias claras Nos especializamos en crear interfaces centradas en el usuario, garantizando una experiencia intuitiva y atractiva. Nuestras soluciones están diseñadas para adaptarse a cualquier dispositivo y ofrecer una navegación fluida, mejorando la satisfacción y la retención del usuario.",
     icono: iconoUx,
     backgroundColor: "#1F1F1F",
     borderColor: "#F28705",
@@ -38,9 +38,9 @@ const data = [
     video: videoDiseño,
 },
 {
-    title: "Desarrollo <br/>web",
+    title: "Desarrollo web",
     description: 
-    "🚀 <strong>Webs rápidas y optimizadas</strong><br/>Creamos sitios web modernos, totalmente adaptados a tus objetivos comerciales. Nuestras soluciones están diseñadas para ofrecer un rendimiento excepcional, optimizadas para la velocidad y la escalabilidad, asegurando una experiencia de usuario ágil y eficiente en todos los dispositivos.",
+    "🚀 Webs rápidas y optimizadas Creamos sitios web modernos, totalmente adaptados a tus objetivos comerciales. Nuestras soluciones están diseñadas para ofrecer un rendimiento excepcional, optimizadas para la velocidad y la escalabilidad, asegurando una experiencia de usuario ágil y eficiente en todos los dispositivos.",
     icono: iconoWeb,
     backgroundColor: "#1F1F1F",
     borderColor: "#D1495B",
@@ -48,9 +48,9 @@ const data = [
     video: videoWeb,
 },
 {
-    title: "Consultoría <br/>TI",
+    title: "Consultoría TI",
     description: 
-    "🧠 <strong>Asesoría estratégica</strong><br/>Evaluamos tu infraestructura tecnológica y diseñamos soluciones personalizadas para mejorar tus procesos y optimizar el rendimiento de tus sistemas. Nuestro objetivo es ayudarte a tomar decisiones informadas y lograr una transformación digital que impulse la eficiencia en tu negocio.",
+    "🧠 Asesoría estratégica Evaluamos tu infraestructura tecnológica y diseñamos soluciones personalizadas para mejorar tus procesos y optimizar el rendimiento de tus sistemas. Nuestro objetivo es ayudarte a tomar decisiones informadas y lograr una transformación digital que impulse la eficiencia en tu negocio.",
     icono: iconoConsultora,
     backgroundColor: "#1F1F1F",
     borderColor: "#A78BFA",
@@ -58,9 +58,9 @@ const data = [
     video: videoConsulta,
 },
 {
-    title: "Desarrollo <br/>de Apps",
+    title: "Desarrollo de Apps",
     description: 
-    "📱 <strong>Aplicaciones móviles</strong><br/>Desarrollamos aplicaciones móviles escalables con interfaces fluidas y paneles de administración fáciles de usar. Nos aseguramos de que cada app sea optimizada para la plataforma, ofreciendo una experiencia de usuario excepcional tanto en Android como en otras plataformas.",
+    "📱 Aplicaciones móviles Desarrollamos aplicaciones móviles escalables con interfaces fluidas y paneles de administración fáciles de usar. Nos aseguramos de que cada app sea optimizada para la plataforma, ofreciendo una experiencia de usuario excepcional tanto en Android como en otras plataformas.",
     icono: iconoApp,
     backgroundColor: "#1F1F1F",
     borderColor: "#0DB39E",
@@ -68,9 +68,9 @@ const data = [
     video: videoApp,
 },
 {
-    title: "Testeo y <br/>Calidad",
+    title: "Testeo y Calidad",
     description: 
-    "🧪 <strong>Verificación constante</strong><br/>Realizamos pruebas exhaustivas de software, auditamos su rendimiento y corregimos errores para garantizar que la experiencia del usuario sea fluida y sin fallos. Nuestro enfoque en calidad asegura que tu software funcione correctamente en todo momento, sin importar el volumen de usuarios.",
+    "🧪 Verificación constante Realizamos pruebas exhaustivas de software, auditamos su rendimiento y corregimos errores para garantizar que la experiencia del usuario sea fluida y sin fallos. Nuestro enfoque en calidad asegura que tu software funcione correctamente en todo momento, sin importar el volumen de usuarios.",
     icono: iconoTest,
     backgroundColor: "#1F1F1F",
     borderColor: "#F2545B",
@@ -78,9 +78,9 @@ const data = [
     video: videoTesteo,
 },
 {
-    title: "Soporte y <br/>escalabilidad",
+    title: "Soporte y escalabilidad",
     description: 
-    "🛠️ <strong>Siempre funcionando</strong><br/>Ofrecemos mantenimiento continuo y monitoreo proactivo para asegurarnos de que tu sistema esté siempre operativo. Además, diseñamos soluciones para escalar tu infraestructura sin perder estabilidad, permitiendo que tu negocio crezca de manera constante.",
+    "🛠️ Siempre funcionando Ofrecemos mantenimiento continuo y monitoreo proactivo para asegurarnos de que tu sistema esté siempre operativo. Además, diseñamos soluciones para escalar tu infraestructura sin perder estabilidad, permitiendo que tu negocio crezca de manera constante.",
     icono: iconoSoporte,
     backgroundColor: "#1F1F1F",
     borderColor: "#F9A826",
@@ -88,9 +88,9 @@ const data = [
     video: videoSoporte,
 },
 {
-    title: "Despliegue <br/>de APIs",
+    title: "Despliegue de APIs",
     description: 
-    "🔗 <strong>Integraciones eficientes</strong><br/>Nos especializamos en crear e integrar APIs que conectan servicios y plataformas de manera eficiente, optimizando los procesos de automatización y mejorando la escalabilidad de las funcionalidades de tu negocio. Ayudamos a agilizar la comunicación entre sistemas y a mejorar la interoperabilidad.",
+    "🔗 Integraciones eficientes Nos especializamos en crear e integrar APIs que conectan servicios y plataformas de manera eficiente, optimizando los procesos de automatización y mejorando la escalabilidad de las funcionalidades de tu negocio. Ayudamos a agilizar la comunicación entre sistemas y a mejorar la interoperabilidad.",
     icono: iconoApi,
     backgroundColor: "#1F1F1F",
     borderColor: "#57CC99",

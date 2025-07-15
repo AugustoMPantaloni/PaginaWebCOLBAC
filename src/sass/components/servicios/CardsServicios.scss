@@ -1,9 +1,9 @@
 .service-card {
     position: relative;
     padding: 20px;
-    width: 700px;
-    height: 400px;
+    height: 100%;
     border-radius: 16px;
+    flex: 1;
     background-color: #2D2D2D;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -102,7 +102,7 @@
 .service-title {
     text-transform: uppercase;
     color: #FF6B00;
-    font-size: 25px;
+    font-size: 2vw;
     font-family: "Sofia Sans", sans-serif;
     font-weight: 700;
     margin-bottom: 10px;
@@ -112,7 +112,7 @@
 
 .service-description {
     color: white;
-    font-size: 17px;
+    font-size: 1.5vw;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     transition: color 0.3s ease;

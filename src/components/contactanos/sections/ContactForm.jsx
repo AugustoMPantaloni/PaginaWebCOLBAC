@@ -73,17 +73,6 @@ const ContactForm = () => {
         <AnimateCircles/>
       </div>
       <Header/>
-      <div className="contact-info">
-        <div className="contact-info__location">
-          <img className="contact-info__icon" src={iconoUbicacion} alt="Ubicación" />
-        </div>
-        <div className="contact-info__details">
-          <div className="contact-info__address">
-            <p className="contact-info__city">Córdoba / Argentina</p>
-          </div>
-          <p className="contact-info__email">Colbac.contacto@gmail.com</p>
-        </div>  
-      </div>
 
       <section className="contact">
         <h1 className="contact__title">¡HABLEMOS!</h1>

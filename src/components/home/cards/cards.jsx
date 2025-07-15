@@ -4,9 +4,6 @@ import React from "react";
 const Cards = ({
     title,
     icono,
-    backgroundColor,
-    borderColor,
-    shadowColor,
     onHover,       
     onLeave,        
     video           

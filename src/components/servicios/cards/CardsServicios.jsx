@@ -18,8 +18,8 @@ return (
             />
         )}
     </div>
-    <h3 className="service-title" dangerouslySetInnerHTML={{ __html: title }} />
-    <p className="service-description" dangerouslySetInnerHTML={{ __html: description }} />
+    <h3 className="service-title">{title}</h3>
+    <p className="service-description">{description}</p>
 </div>
 );
 };

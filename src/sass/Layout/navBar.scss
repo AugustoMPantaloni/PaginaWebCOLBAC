@@ -1,10 +1,10 @@
 .navbar {
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   z-index: 999;
-  
+  flex-direction: column;
+  align-content: stretch;
   &--closing {
     opacity: 0;
     transform: rotateY(30deg) scale(0.8);
@@ -23,7 +23,7 @@
   }
 
   &__close-icon {
-    height: 30px;
+    height: 1.2rem;
     background: none;
   }
 
@@ -34,7 +34,7 @@
     font-weight: 700;
     line-height: 1.4;
     color: #FF6B00;
-    font-size: 20px;
+    font-size: 2vw;
     cursor: pointer;
     transition: color 0.3s ease;
     will-change: transform, color;
@@ -63,22 +63,28 @@
 
   &__nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
   }
 
   &__nav-top {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-content: stretch;
     gap: 20px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
   }
 
   &__group--left,
   &__group--right {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   &__group--center {
@@ -87,11 +93,13 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 100%;
   }
 
   &__group--down{
     display: flex;
     justify-content: center;
+    height: 100%;
   }
 
   &__item {
@@ -101,14 +109,12 @@
     transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
     transform-origin: center;
     border-radius: 3px;
+    flex: 1;  
+    width: 100%;
     will-change: transform, filter;
-    position: relative;
-    overflow: hidden;
-    
     &::before {
       content: '';
       position: absolute;
-      top: -3px;
       left: -3px;
       right: -3px;
       bottom: -3px;
@@ -135,26 +141,6 @@
         opacity: 1;
       }
     }
-
-    &--sobre {
-      height: 300px;
-      width: 340px;
-    }
-
-    &--serv {
-      height: 300px;
-      width: 740px;
-    }
-
-    &--trabajo {
-      height: 300px;
-      width: 340px;
-    }
-    
-    &--contacto {
-      height: 300px;
-      width: 340px;
-    }
   }
 
   &__link {
@@ -166,7 +152,7 @@
     font-weight: 700;
     line-height: 1.4; 
     font-optical-sizing: auto;
-    font-size: 28px;
+    font-size: 2vw;
     transition: all 0.4s ease;
     position: relative;
     z-index: 2;
@@ -192,12 +178,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: .5rem;
 
     &-container-socials {
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 1rem;
     }
 
     &-container-buttons {
@@ -205,14 +191,14 @@
       flex-direction: row;
       justify-self: center;
       align-items: center;
-      gap: 100px;
+      gap: 1rem;
     }
 
     &-icon {
       &--instagram img,
       &--contact img,
       &--facebook img {
-        height: 35px;
+        height: 2rem;
         transition: transform 0.3s ease, filter 0.3s ease;
         will-change: transform, filter;
       }

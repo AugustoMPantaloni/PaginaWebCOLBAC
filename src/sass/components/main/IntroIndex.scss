@@ -28,7 +28,8 @@
     &__text-container {
         display: flex;
         justify-content: center;
-        padding-top: clamp(100px, 45vh, 450px);
+        min-height: 100%;
+        align-items: center;
         position: relative;
         z-index: 2; // Capa superior
     }
@@ -38,7 +39,7 @@
         color: #F2F2F2;
         font-family: "Sofia Sans", sans-serif;
         font-weight: 900;
-        font-size: 70px;
+        font-size: 4.5vw;
         position: relative;
         z-index: 2; // Capa superior
     }

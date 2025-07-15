@@ -47,14 +47,15 @@ z-index: 1;
 
     &__form {
         display: flex;
-        flex-direction: column;
         gap: 1.5rem;
+        flex-direction: column;
     }
 
     &__form-info{
         display: flex;
         flex-direction: row;
-        gap: 20px
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     &__form-group {

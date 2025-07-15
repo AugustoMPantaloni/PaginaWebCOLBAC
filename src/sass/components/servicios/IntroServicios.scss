@@ -48,19 +48,11 @@
 }
 
 .intro-servicios__cards {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: grid;
-    gap: 50px;
-    grid-template-columns: repeat(2, 1fr);
-
-    
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;  
-        gap: 30px;  
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 1rem;
 }
 
 .intro-servicios__container-cta {

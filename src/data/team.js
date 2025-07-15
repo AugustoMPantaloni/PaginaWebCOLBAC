@@ -1,19 +1,5 @@
-import franco from "../assets/photosTeam/franco.jpeg"
-
 
 const dataTeam = [
-    {
-        photo: franco,
-        name:"PLOMER FRANCO NICOLÁS",
-        role:"Product Manager & Estratega Técnico de Proyectos",
-        bio:`Desde temprana edad, Franco supo que su camino estaba ligado a la tecnología. Tuvo la suerte de formarse en un colegio técnico donde dio sus primeros pasos en la programación,
-        experiencia que lo motivó a continuar una carrera universitaria y, con el tiempo, a dedicarse profesionalmente al mundo del software. Con un enfoque siempre orientado
-        a dar “la milla extra”, Franco no solo lidera con criterio técnico, sino también con visión estratégica. A lo largo de los años, ha trabajado en proyectos personales de innovación
-        y utilidad, así como en desarrollos para clientes de gran envergadura. Su manera de abordar cada desafío parte de un principio claro: comprender a fondo la necesidad del cliente y, 
-        desde allí, construir soluciones sólidas, escalables e innovadoras. En Colbac, Franco combina su pensamiento analítico con su pasión por la gestión de producto, aportando claridad,
-        dirección y creatividad en cada proyecto que lidera. Fanático del básquet, los videojuegos y el entrenamiento físico, encuentra en esas pasiones el equilibrio ideal para seguir
-        creciendo tanto a nivel personal como profesional.`
-    },
     {
         photo: "",
         name: "PANTALONI AUGUSTO MAXIMILIANO",

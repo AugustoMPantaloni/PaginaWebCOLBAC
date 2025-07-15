@@ -33,13 +33,10 @@ const Header = ({ style }) => {
         <Link to="/">
           <img className="header__logo" src={logoColor} alt="Logo" />
         </Link>
-        <p className="header__brand">&lt;Colbac&gt; </p>
-        <p className="header__extra"> Argentina + El Mundo </p>
       </div>
 
       <button onClick={mostrarMenu} className="header__menu-button">
         <img className="header__menu-img" src={iconoNavBar} alt="Menu" />
-        <p className="header__menu-p"> MENU </p>
       </button>
 
       {menu && (
